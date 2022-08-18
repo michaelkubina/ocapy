@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2409">
+<TopMargin HEIGHT="4" WIDTH="2409" VPOS="0" HPOS="0">
+</TopMargin>
+<LeftMargin HEIGHT="1533" WIDTH="156" VPOS="4" HPOS="0">
+</LeftMargin>
+<RightMargin HEIGHT="1533" WIDTH="911" VPOS="4" HPOS="1498">
+</RightMargin>
+<BottomMargin HEIGHT="1622" WIDTH="2409" VPOS="1537" HPOS="0">
+</BottomMargin>
+<PrintSpace HEIGHT="1533" WIDTH="1342" VPOS="4" HPOS="156">
+<TextBlock ID="Page1_Block1" HEIGHT="127" WIDTH="280" VPOS="1410" HPOS="1218" language="de"><Shape><Polygon POINTS="1228,1419 1507,1419 1507,1545 1228,1545 1228,1419"/></Shape>
+<TextLine HEIGHT="117" WIDTH="275" VPOS="1415" HPOS="1223"><String WC="0.6200000048" CONTENT="»" HEIGHT="116" WIDTH="16" VPOS="1416" HPOS="1223"/><String WC="0.2730769217" CONTENT="StoaB-u.Unlvr" HEIGHT="32" WIDTH="185" VPOS="1438" HPOS="1240"/><SP WIDTH="13" VPOS="1447" HPOS="1425"/><String WC="0.3325000107" CONTENT="itfits-&apos;" HEIGHT="41" WIDTH="60" VPOS="1431" HPOS="1438"/></TextLine>
+<TextLine HEIGHT="43" WIDTH="249" VPOS="1479" HPOS="1241"><String WC="0.2399999946" CONTENT="Bibliothek" HEIGHT="31" WIDTH="114" VPOS="1480" HPOS="1241"/><SP WIDTH="26" VPOS="1486" HPOS="1356"/><String WC="0.3714285791" CONTENT="Hamburg" HEIGHT="37" WIDTH="107" VPOS="1485" HPOS="1383"/></TextLine>
+</TextBlock><GraphicalElement ID="Page1_Block2" HEIGHT="6" WIDTH="273" VPOS="1531" HPOS="1225"/><GraphicalElement ID="Page1_Block3" HEIGHT="206" WIDTH="15" VPOS="407" HPOS="208"/><GraphicalElement ID="Page1_Block4" HEIGHT="233" WIDTH="16" VPOS="1147" HPOS="213"/><Illustration ID="Page1_Block5" HEIGHT="108" WIDTH="38" VPOS="234" HPOS="156"/>
+<Illustration ID="Page1_Block6" HEIGHT="170" WIDTH="63" VPOS="4" HPOS="490"><Shape><Polygon POINTS="504,10 566,10 566,179 504,179 504,10"/></Shape></Illustration>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

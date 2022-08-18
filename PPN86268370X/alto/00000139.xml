@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2433">
+<LeftMargin HEIGHT="2585" WIDTH="169" VPOS="0" HPOS="0">
+</LeftMargin>
+<BottomMargin HEIGHT="574" WIDTH="2433" VPOS="2585" HPOS="0">
+</BottomMargin>
+<PrintSpace HEIGHT="2585" WIDTH="2264" VPOS="0" HPOS="169">
+<ComposedBlock ID="Page1_Block1" HEIGHT="1989" WIDTH="2023" VPOS="596" HPOS="169" TYPE="container"><Shape><Polygon POINTS="588,186 2567,186 2567,2198 588,2198 588,186"/></Shape>
+<Illustration ID="Page1_Block2" HEIGHT="1986" WIDTH="1472" VPOS="599" HPOS="169"><Shape><Polygon POINTS="588,186 2567,186 2567,1647 588,1647 588,186"/></Shape></Illustration>
+<TextBlock ID="Page1_Block3" HEIGHT="1008" WIDTH="41" VPOS="1085" HPOS="1714" language="de"><Shape><Polygon POINTS="1072,1728 2080,1728 2080,1764 1072,1764 1072,1728"/></Shape>
+<TextLine HEIGHT="1007" WIDTH="44" VPOS="1086" HPOS="1712"><String WC="0.8874999881" CONTENT="Abb." HEIGHT="68" WIDTH="25" VPOS="2025" HPOS="1718"/><SP WIDTH="24" VPOS="2010" HPOS="1719"/><String WC="0.8566666842" CONTENT="45." HEIGHT="49" WIDTH="24" VPOS="1960" HPOS="1719"/><SP WIDTH="24" VPOS="1936" HPOS="1719"/><String WC="0.928571403" CONTENT="Nicolas" HEIGHT="113" WIDTH="27" VPOS="1822" HPOS="1718"/><SP WIDTH="24" VPOS="1800" HPOS="1720"/><String WC="0.8262500167" CONTENT="Poussin," HEIGHT="128" WIDTH="31" VPOS="1671" HPOS="1719"/><SP WIDTH="29" VPOS="1651" HPOS="1720"/><String WC="0.8583333492" CONTENT="Apollo" HEIGHT="97" WIDTH="32" VPOS="1553" HPOS="1719"/><SP WIDTH="17" VPOS="1532" HPOS="1727"/><String WC="1." CONTENT="und" HEIGHT="52" WIDTH="24" VPOS="1479" HPOS="1720"/><SP WIDTH="24" VPOS="1456" HPOS="1720"/><String WC="0.7242857218" CONTENT="Daphne," HEIGHT="124" WIDTH="32" VPOS="1331" HPOS="1719"/><SP WIDTH="28" VPOS="1308" HPOS="1720"/><String WC="0.8766666651" CONTENT="Paris," HEIGHT="85" WIDTH="31" VPOS="1222" HPOS="1718"/><SP WIDTH="30" VPOS="1200" HPOS="1719"/><String WC="0.8014285564" CONTENT="Louvre." HEIGHT="113" WIDTH="25" VPOS="1086" HPOS="1719"/></TextLine>
+</TextBlock></ComposedBlock>
+<Illustration ID="Page1_Block4" HEIGHT="422" WIDTH="389" VPOS="0" HPOS="2044"><Shape><Polygon POINTS="2742,2063 3164,2063 3164,2203 3163,2203 3163,2364 3162,2364 3162,2451 2875,2451 2875,2450 2742,2450 2742,2063"/></Shape></Illustration>
+<TextBlock ID="Page1_Block5" HEIGHT="52" WIDTH="227" VPOS="232" HPOS="1665" language="de"><Shape><Polygon POINTS="2882,1683 2932,1683 2932,1910 2882,1910 2882,1683"/></Shape>
+<TextLine HEIGHT="39" WIDTH="215" VPOS="239" HPOS="1671"><String WC="1." CONTENT="Tafel" HEIGHT="35" WIDTH="95" VPOS="240" HPOS="1671"/><SP WIDTH="21" VPOS="242" HPOS="1767"/><String WC="1." CONTENT="XXIII" HEIGHT="35" WIDTH="97" VPOS="242" HPOS="1789"/></TextLine>
+</TextBlock><GraphicalElement ID="Page1_Block6" HEIGHT="107" WIDTH="5" VPOS="2471" HPOS="180"/><GraphicalElement ID="Page1_Block7" HEIGHT="444" WIDTH="11" VPOS="901" HPOS="180"/><GraphicalElement ID="Page1_Block8" HEIGHT="316" WIDTH="7" VPOS="608" HPOS="182"/><GraphicalElement ID="Page1_Block9" HEIGHT="712" WIDTH="21" VPOS="532" HPOS="2166"/><GraphicalElement ID="Page1_Block10" HEIGHT="5" WIDTH="329" VPOS="180" HPOS="169"/><GraphicalElement ID="Page1_Block11" HEIGHT="102" WIDTH="6" VPOS="1040" HPOS="2283"/>
+<Illustration ID="Page1_Block12" HEIGHT="46" WIDTH="281" VPOS="428" HPOS="2149"><Shape><Polygon POINTS="2690,2166 2734,2166 2734,2446 2690,2446 2690,2166"/></Shape></Illustration>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

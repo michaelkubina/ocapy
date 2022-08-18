@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2433">
+<PrintSpace HEIGHT="3159" WIDTH="2433" VPOS="0" HPOS="0">
+<Illustration ID="Page1_Block1" HEIGHT="3159" WIDTH="2433" VPOS="0" HPOS="0"><Shape><Polygon POINTS="20,6 271,6 271,7 432,7 432,8 753,8 753,9 1074,9 1074,10 1235,10 1235,11 1556,11 1556,12 1877,12 1877,13 2038,13 2038,14 2359,14 2359,15 2451,15 2451,550 2450,550 2450,613 2451,613 2451,710 2450,710 2450,871 2449,871 2449,1003 2450,1003 2450,1030 2449,1030 2449,1192 2448,1192 2448,1353 2447,1353 2447,1393 2448,1393 2448,1513 2447,1513 2447,1674 2446,1674 2446,1784 2447,1784 2447,1835 2446,1835 2446,1995 2445,1995 2445,2156 2444,2156 2444,2174 2445,2174 2445,2316 2444,2316 2444,2477 2443,2477 2443,2564 2444,2564 2444,2638 2443,2638 2443,2798 2442,2798 2442,2954 2443,2954 2443,2958 2442,2958 2442,3120 2441,3120 2441,3174 2190,3174 2190,3173 2029,3173 2029,3172 1708,3172 1708,3171 1387,3171 1387,3170 1226,3170 1226,3169 905,3169 905,3168 584,3168 584,3167 423,3167 423,3166 102,3166 102,3165 9,3165 9,2791 10,2791 10,2630 11,2630 11,2567 10,2567 10,2470 11,2470 11,2309 12,2309 12,2177 11,2177 11,2150 12,2150 12,1988 13,1988 13,1827 14,1827 14,1787 13,1787 13,1667 14,1667 14,1506 15,1506 15,1396 14,1396 14,1345 15,1345 15,1185 16,1185 16,1024 17,1024 17,1006 16,1006 16,864 17,864 17,703 18,703 18,616 17,616 17,542 18,542 18,382 19,382 19,226 18,226 18,222 19,222 19,60 20,60 20,6"/></Shape></Illustration><GraphicalElement ID="Page1_Block2" HEIGHT="3" WIDTH="86" VPOS="2982" HPOS="355"/><GraphicalElement ID="Page1_Block3" HEIGHT="96" WIDTH="2" VPOS="933" HPOS="340"/><GraphicalElement ID="Page1_Block4" HEIGHT="174" WIDTH="7" VPOS="1791" HPOS="349"/><GraphicalElement ID="Page1_Block5" HEIGHT="151" WIDTH="7" VPOS="2290" HPOS="356"/><GraphicalElement ID="Page1_Block6" HEIGHT="1" WIDTH="69" VPOS="2975" HPOS="920"/>
+<Illustration ID="Page1_Block7" HEIGHT="137" WIDTH="91" VPOS="795" HPOS="615"><Shape><Polygon POINTS="632,804 722,804 722,940 632,940 632,804"/></Shape></Illustration>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2476">
+<TopMargin HEIGHT="1448" WIDTH="2476" VPOS="0" HPOS="0">
+</TopMargin>
+<LeftMargin HEIGHT="106" WIDTH="1326" VPOS="1448" HPOS="0">
+</LeftMargin>
+<RightMargin HEIGHT="106" WIDTH="870" VPOS="1448" HPOS="1606">
+</RightMargin>
+<BottomMargin HEIGHT="1605" WIDTH="2476" VPOS="1554" HPOS="0">
+</BottomMargin>
+<PrintSpace HEIGHT="106" WIDTH="280" VPOS="1448" HPOS="1326">
+<TextBlock ID="Page1_Block1" HEIGHT="104" WIDTH="280" VPOS="1448" HPOS="1326" language="de"><Shape><Polygon POINTS="1342,1462 1622,1462 1622,1566 1616,1566 1616,1560 1342,1560 1342,1462"/></Shape>
+<TextLine HEIGHT="25" WIDTH="270" VPOS="1465" HPOS="1326"><String WC="0.2599999905" CONTENT="OlüUb&apos;" HEIGHT="22" WIDTH="81" VPOS="1467" HPOS="1326"/><SP WIDTH="6" VPOS="1474" HPOS="1408"/><String WC="0.5" CONTENT="w-" HEIGHT="8" WIDTH="19" VPOS="1476" HPOS="1415"/><SP WIDTH="7" VPOS="1477" HPOS="1435"/><String WC="1." CONTENT="—" HEIGHT="8" WIDTH="14" VPOS="1476" HPOS="1443"/><SP WIDTH="129" VPOS="1467" HPOS="1458"/><String WC="0." CONTENT="L" HEIGHT="14" WIDTH="8" VPOS="1467" HPOS="1588"/></TextLine>
+<TextLine HEIGHT="64" WIDTH="273" VPOS="1483" HPOS="1326"><String WC="0.224545449" CONTENT="j&amp;lblkrthe*" HEIGHT="61" WIDTH="121" VPOS="1486" HPOS="1326"/><SP WIDTH="26" VPOS="1495" HPOS="1448"/><String WC="0.1774999946" CONTENT="Hamburg}" HEIGHT="56" WIDTH="124" VPOS="1484" HPOS="1475"/></TextLine>
+</TextBlock><GraphicalElement ID="Page1_Block2" HEIGHT="15" WIDTH="272" VPOS="1539" HPOS="1326"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

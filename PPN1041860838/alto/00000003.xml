@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2019-02-04</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="2247" WIDTH="1828">
+<PrintSpace HEIGHT="2247" WIDTH="1828" VPOS="0" HPOS="0">
+<Illustration ID="Page1_Block1" HEIGHT="2247" WIDTH="1828" VPOS="0" HPOS="0"><Shape><Polygon POINTS="1714,6 1752,6 1752,7 1836,7 1836,102 1837,102 1837,170 1836,170 1836,260 1837,260 1837,419 1838,419 1838,445 1837,445 1837,577 1838,577 1838,721 1837,721 1837,734 1838,734 1838,894 1839,894 1839,996 1838,996 1838,1052 1839,1052 1839,1210 1840,1210 1840,1271 1839,1271 1839,1368 1840,1368 1840,1527 1841,1527 1841,1547 1840,1547 1840,1685 1841,1685 1841,1822 1840,1822 1840,1842 1841,1842 1841,2002 1842,2002 1842,2097 1841,2097 1841,2160 1842,2160 1842,2254 1560,2254 1560,2255 1244,2255 1244,2256 926,2256 926,2257 452,2257 452,2258 136,2258 136,2259 98,2259 98,2258 14,2258 14,2163 13,2163 13,2095 14,2095 14,2005 13,2005 13,1846 12,1846 12,1820 13,1820 13,1688 12,1688 12,1544 13,1544 13,1531 12,1531 12,1371 11,1371 11,1269 12,1269 12,1213 11,1213 11,1055 10,1055 10,994 11,994 11,897 10,897 10,738 9,738 9,718 10,718 10,580 9,580 9,443 10,443 10,423 9,423 9,263 8,263 8,168 9,168 9,105 8,105 8,11 290,11 290,10 606,10 606,9 924,9 924,8 1398,8 1398,7 1714,7 1714,6"/></Shape></Illustration><GraphicalElement ID="Page1_Block2" HEIGHT="42" WIDTH="936" VPOS="160" HPOS="644"/><GraphicalElement ID="Page1_Block3" HEIGHT="17" WIDTH="259" VPOS="1090" HPOS="295"/><GraphicalElement ID="Page1_Block4" HEIGHT="35" WIDTH="508" VPOS="2122" HPOS="830"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

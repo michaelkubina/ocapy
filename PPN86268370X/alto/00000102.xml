@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2409">
+<PrintSpace HEIGHT="3159" WIDTH="2409" VPOS="0" HPOS="0">
+<Illustration ID="Page1_Block1" HEIGHT="3159" WIDTH="2409" VPOS="0" HPOS="0"><Shape><Polygon POINTS="12,1 392,1 392,2 665,2 665,3 938,3 938,4 1212,4 1212,5 1485,5 1485,6 1758,6 1758,7 2031,7 2031,8 2304,8 2304,9 2420,9 2420,356 2419,356 2419,629 2418,629 2418,902 2417,902 2417,1175 2416,1175 2416,1449 2415,1449 2415,1722 2414,1722 2414,1995 2413,1995 2413,2268 2412,2268 2412,2541 2411,2541 2411,2814 2410,2814 2410,3087 2409,3087 2409,3167 2029,3167 2029,3166 1756,3166 1756,3165 1483,3165 1483,3164 1209,3164 1209,3163 936,3163 936,3162 663,3162 663,3161 390,3161 390,3160 117,3160 117,3159 1,3159 1,2812 2,2812 2,2539 3,2539 3,2266 4,2266 4,1993 5,1993 5,1719 6,1719 6,1446 7,1446 7,1173 8,1173 8,900 9,900 9,627 10,627 10,354 11,354 11,81 12,81 12,1"/></Shape></Illustration><GraphicalElement ID="Page1_Block2" HEIGHT="17" WIDTH="278" VPOS="1411" HPOS="1166"/><GraphicalElement ID="Page1_Block3" HEIGHT="134" WIDTH="11" VPOS="263" HPOS="191"/><GraphicalElement ID="Page1_Block4" HEIGHT="237" WIDTH="14" VPOS="799" HPOS="216"/><GraphicalElement ID="Page1_Block5" HEIGHT="210" WIDTH="14" VPOS="391" HPOS="216"/><GraphicalElement ID="Page1_Block6" HEIGHT="301" WIDTH="17" VPOS="1083" HPOS="220"/><GraphicalElement ID="Page1_Block7" HEIGHT="84" WIDTH="5" VPOS="2797" HPOS="227"/><GraphicalElement ID="Page1_Block8" HEIGHT="97" WIDTH="7" VPOS="2791" HPOS="278"/><GraphicalElement ID="Page1_Block9" HEIGHT="115" WIDTH="5" VPOS="2798" HPOS="290"/><GraphicalElement ID="Page1_Block10" HEIGHT="282" WIDTH="10" VPOS="2681" HPOS="302"/><GraphicalElement ID="Page1_Block11" HEIGHT="156" WIDTH="5" VPOS="2489" HPOS="301"/><GraphicalElement ID="Page1_Block12" HEIGHT="48" WIDTH="2" VPOS="973" HPOS="230"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

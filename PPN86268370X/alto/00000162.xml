@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2476">
+<PrintSpace HEIGHT="3159" WIDTH="2476" VPOS="0" HPOS="0">
+<Illustration ID="Page1_Block1" HEIGHT="3159" WIDTH="2476" VPOS="0" HPOS="0"><Shape><Polygon POINTS="6,0 396,0 396,1 961,1 961,2 1526,2 1526,3 2091,3 2091,4 2481,4 2481,736 2480,736 2480,1301 2479,1301 2479,1866 2478,1866 2478,2431 2477,2431 2477,2996 2476,2996 2476,3163 2086,3163 2086,3162 1521,3162 1521,3161 956,3161 956,3160 391,3160 391,3159 2,3159 2,1862 3,1862 3,1297 4,1297 4,732 5,732 5,167 6,167 6,0"/></Shape></Illustration><GraphicalElement ID="Page1_Block2" HEIGHT="88" WIDTH="6" VPOS="2422" HPOS="222"/><GraphicalElement ID="Page1_Block3" HEIGHT="110" WIDTH="6" VPOS="2398" HPOS="227"/><GraphicalElement ID="Page1_Block4" HEIGHT="1064" WIDTH="43" VPOS="594" HPOS="272"/><GraphicalElement ID="Page1_Block5" HEIGHT="888" WIDTH="42" VPOS="1672" HPOS="276"/><GraphicalElement ID="Page1_Block6" HEIGHT="213" WIDTH="11" VPOS="431" HPOS="328"/><GraphicalElement ID="Page1_Block7" HEIGHT="393" WIDTH="14" VPOS="665" HPOS="329"/><GraphicalElement ID="Page1_Block8" HEIGHT="188" WIDTH="15" VPOS="1173" HPOS="332"/><GraphicalElement ID="Page1_Block9" HEIGHT="202" WIDTH="9" VPOS="2957" HPOS="2467"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

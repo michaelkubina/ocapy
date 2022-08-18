@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2464">
+<TopMargin HEIGHT="4" WIDTH="2464" VPOS="0" HPOS="0">
+</TopMargin>
+<LeftMargin HEIGHT="3152" WIDTH="4" VPOS="4" HPOS="0">
+</LeftMargin>
+<RightMargin HEIGHT="3152" WIDTH="4" VPOS="4" HPOS="2460">
+</RightMargin>
+<BottomMargin HEIGHT="3" WIDTH="2464" VPOS="3156" HPOS="0">
+</BottomMargin>
+<PrintSpace HEIGHT="3152" WIDTH="2456" VPOS="4" HPOS="4">
+<Illustration ID="Page1_Block1" HEIGHT="993" WIDTH="1411" VPOS="451" HPOS="274"><Shape><Polygon POINTS="294,465 1701,465 1701,1453 294,1453 294,465"/></Shape></Illustration>
+<Illustration ID="Page1_Block2" HEIGHT="1126" WIDTH="1415" VPOS="1547" HPOS="281"><Shape><Polygon POINTS="297,1561 1707,1561 1707,2682 297,2682 297,1561"/></Shape></Illustration>
+<TextBlock ID="Page1_Block3" HEIGHT="50" WIDTH="1405" VPOS="1461" HPOS="280" language="de"><Shape><Polygon POINTS="296,1475 1701,1475 1701,1520 296,1520 296,1475"/></Shape>
+<TextLine HEIGHT="46" WIDTH="1393" VPOS="1463" HPOS="286"><String WC="0.9399999976" CONTENT="Abb." HEIGHT="24" WIDTH="70" VPOS="1476" HPOS="286"/><SP WIDTH="10" VPOS="1476" HPOS="357"/><String WC="0.4433333278" CONTENT="27." HEIGHT="26" WIDTH="49" VPOS="1475" HPOS="368"/><SP WIDTH="18" VPOS="1475" HPOS="418"/><String WC="0.823333323" CONTENT="Andrea" HEIGHT="26" WIDTH="112" VPOS="1474" HPOS="437"/><SP WIDTH="18" VPOS="1474" HPOS="550"/><String WC="0.9766666889" CONTENT="del" HEIGHT="25" WIDTH="43" VPOS="1473" HPOS="569"/><SP WIDTH="19" VPOS="1473" HPOS="613"/><String WC="0.8059999943" CONTENT="Sarto" HEIGHT="25" WIDTH="84" VPOS="1473" HPOS="633"/><SP WIDTH="9" VPOS="1472" HPOS="718"/><String WC="0.9049999714" CONTENT="?," HEIGHT="31" WIDTH="24" VPOS="1472" HPOS="728"/><SP WIDTH="19" VPOS="1473" HPOS="753"/><String WC="0.8916666508" CONTENT="Apollo" HEIGHT="32" WIDTH="98" VPOS="1472" HPOS="773"/><SP WIDTH="20" VPOS="1479" HPOS="872"/><String WC="0.8600000143" CONTENT="und" HEIGHT="24" WIDTH="53" VPOS="1472" HPOS="893"/><SP WIDTH="22" VPOS="1472" HPOS="947"/><String WC="0.9033333063" CONTENT="Daphne" HEIGHT="33" WIDTH="117" VPOS="1471" HPOS="970"/><SP WIDTH="18" VPOS="1471" HPOS="1088"/><String WC="0.6775000095" CONTENT="(und" HEIGHT="32" WIDTH="68" VPOS="1470" HPOS="1107"/><SP WIDTH="22" VPOS="1471" HPOS="1176"/><String WC="0.8149999976" CONTENT="Narziß)," HEIGHT="32" WIDTH="123" VPOS="1469" HPOS="1199"/><SP WIDTH="21" VPOS="1469" HPOS="1323"/><String WC="0.6999999881" CONTENT="Florenz," HEIGHT="31" WIDTH="123" VPOS="1468" HPOS="1345"/><SP WIDTH="15" VPOS="1468" HPOS="1469"/><String WC="0.8600000143" CONTENT="Gal." HEIGHT="25" WIDTH="59" VPOS="1468" HPOS="1485"/><SP WIDTH="15" VPOS="1468" HPOS="1545"/><String WC="0.7662500143" CONTENT="Corsini." HEIGHT="26" WIDTH="118" VPOS="1467" HPOS="1561"/></TextLine>
+</TextBlock>
+<TextBlock ID="Page1_Block4" HEIGHT="52" WIDTH="1284" VPOS="2702" HPOS="351" language="de"><Shape><Polygon POINTS="363,2716 1646,2716 1646,2763 363,2763 363,2716"/></Shape>
+<TextLine HEIGHT="48" WIDTH="1272" VPOS="2704" HPOS="357"><String WC="1." CONTENT="Abb." HEIGHT="27" WIDTH="70" VPOS="2718" HPOS="357"/><SP WIDTH="12" VPOS="2719" HPOS="427"/><String WC="0.6666666865" CONTENT="28." HEIGHT="25" WIDTH="50" VPOS="2719" HPOS="439"/><SP WIDTH="24" VPOS="2719" HPOS="489"/><String WC="0.9316666722" CONTENT="Matteo" HEIGHT="25" WIDTH="109" VPOS="2718" HPOS="513"/><SP WIDTH="21" VPOS="2717" HPOS="622"/><String WC="0.9399999976" CONTENT="Balducci," HEIGHT="32" WIDTH="140" VPOS="2715" HPOS="643"/><SP WIDTH="23" VPOS="2716" HPOS="783"/><String WC="0.728333354" CONTENT="Daphne" HEIGHT="33" WIDTH="118" VPOS="2714" HPOS="806"/><SP WIDTH="18" VPOS="2713" HPOS="924"/><String WC="0.7325000167" CONTENT="(und" HEIGHT="32" WIDTH="69" VPOS="2712" HPOS="942"/><SP WIDTH="22" VPOS="2713" HPOS="1012"/><String WC="0.75" CONTENT="Parisurteil)," HEIGHT="34" WIDTH="181" VPOS="2710" HPOS="1034"/><SP WIDTH="23" VPOS="2712" HPOS="1215"/><String WC="0.8700000048" CONTENT="Berlin," HEIGHT="30" WIDTH="101" VPOS="2710" HPOS="1238"/><SP WIDTH="20" VPOS="2709" HPOS="1339"/><String WC="0.9100000262" CONTENT="Gal." HEIGHT="26" WIDTH="58" VPOS="2709" HPOS="1360"/><SP WIDTH="14" VPOS="2718" HPOS="1419"/><String WC="0.7666666508" CONTENT="van" HEIGHT="19" WIDTH="50" VPOS="2716" HPOS="1434"/><SP WIDTH="18" VPOS="2709" HPOS="1485"/><String WC="1." CONTENT="Diemen." HEIGHT="25" WIDTH="125" VPOS="2708" HPOS="1504"/></TextLine>
+</TextBlock>
+<TextBlock ID="Page1_Block5" HEIGHT="48" WIDTH="196" VPOS="239" HPOS="1717" language="de"><Shape><Polygon POINTS="1737,254 1933,254 1933,300 1737,300 1737,254"/></Shape>
+<TextLine HEIGHT="37" WIDTH="184" VPOS="245" HPOS="1723"><String WC="0.8539999723" CONTENT="Tafel" HEIGHT="35" WIDTH="96" VPOS="245" HPOS="1723"/><SP WIDTH="19" VPOS="247" HPOS="1820"/><String WC="0.9300000072" CONTENT="XIII" HEIGHT="33" WIDTH="67" VPOS="248" HPOS="1840"/></TextLine>
+</TextBlock><GraphicalElement ID="Page1_Block6" HEIGHT="4" WIDTH="101" VPOS="459" HPOS="1364"/><GraphicalElement ID="Page1_Block7" HEIGHT="3" WIDTH="168" VPOS="1555" HPOS="656"/><GraphicalElement ID="Page1_Block8" HEIGHT="13" WIDTH="840" VPOS="2952" HPOS="1144"/><GraphicalElement ID="Page1_Block9" HEIGHT="4" WIDTH="132" VPOS="2963" HPOS="1012"/><GraphicalElement ID="Page1_Block10" HEIGHT="11" WIDTH="614" VPOS="2967" HPOS="267"/>
+<Illustration ID="Page1_Block11" HEIGHT="58" WIDTH="338" VPOS="166" HPOS="2122"><Shape><Polygon POINTS="2143,183 2480,183 2480,239 2143,239 2143,183"/></Shape></Illustration>
+<Illustration ID="Page1_Block12" HEIGHT="30" WIDTH="134" VPOS="2389" HPOS="768"><Shape><Polygon POINTS="781,2400 914,2400 914,2429 781,2429 781,2400"/></Shape></Illustration>
+<Illustration ID="Page1_Block13" HEIGHT="181" WIDTH="227" VPOS="2975" HPOS="4"><Shape><Polygon POINTS="15,2983 241,2983 241,3163 15,3163 15,2983"/></Shape></Illustration>
+<Illustration ID="Page1_Block14" HEIGHT="175" WIDTH="41" VPOS="4" HPOS="735"><Shape><Polygon POINTS="756,14 796,14 796,189 756,189 756,14"/></Shape></Illustration>
+<Illustration ID="Page1_Block15" HEIGHT="187" WIDTH="50" VPOS="2968" HPOS="893"><Shape><Polygon POINTS="904,2979 953,2979 953,3166 904,3166 904,2979"/></Shape></Illustration>
+<Illustration ID="Page1_Block16" HEIGHT="1125" WIDTH="1415" VPOS="1548" HPOS="281"><Shape><Polygon POINTS="297,1562 1707,1562 1707,2682 297,2682 297,1562"/></Shape></Illustration>
+<Illustration ID="Page1_Block17" HEIGHT="992" WIDTH="1411" VPOS="452" HPOS="274"><Shape><Polygon POINTS="294,466 1701,466 1701,1453 294,1453 294,466"/></Shape></Illustration>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

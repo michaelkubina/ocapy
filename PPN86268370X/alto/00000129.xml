@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2433">
+<TopMargin HEIGHT="201" WIDTH="2433" VPOS="0" HPOS="0">
+</TopMargin>
+<LeftMargin HEIGHT="2515" WIDTH="202" VPOS="201" HPOS="0">
+</LeftMargin>
+<RightMargin HEIGHT="2515" WIDTH="527" VPOS="201" HPOS="1906">
+<TextBlock ID="Page1_Block1" HEIGHT="42" WIDTH="26" VPOS="307" HPOS="2123" language="de"><Shape><Polygon POINTS="2818,2148 2860,2148 2860,2174 2818,2174 2818,2148"/></Shape>
+<TextLine HEIGHT="23" WIDTH="17" VPOS="317" HPOS="2127"><String WC="0.125" CONTENT="■v" HEIGHT="23" WIDTH="17" VPOS="317" HPOS="2127"/></TextLine>
+</TextBlock><GraphicalElement ID="Page1_Block2" HEIGHT="1476" WIDTH="4" VPOS="453" HPOS="2429"/><GraphicalElement ID="Page1_Block3" HEIGHT="77" WIDTH="1" VPOS="202" HPOS="2432"/>
+</RightMargin>
+<BottomMargin HEIGHT="443" WIDTH="2433" VPOS="2716" HPOS="0"><GraphicalElement ID="Page1_Block4" HEIGHT="258" WIDTH="4" VPOS="2716" HPOS="0"/>
+</BottomMargin>
+<PrintSpace HEIGHT="2515" WIDTH="1704" VPOS="201" HPOS="202">
+<Illustration ID="Page1_Block5" HEIGHT="1175" WIDTH="1413" VPOS="1541" HPOS="211"><Shape><Polygon POINTS="463,229 1629,229 1629,1635 463,1635 463,229"/></Shape></Illustration>
+<TextBlock ID="Page1_Block6" HEIGHT="889" WIDTH="93" VPOS="1676" HPOS="1657" language="de"><Shape><Polygon POINTS="605,1674 1493,1674 1493,1761 605,1761 605,1674"/></Shape>
+<TextLine HEIGHT="878" WIDTH="46" VPOS="1682" HPOS="1660"><String WC="0.8849999905" CONTENT="Abb." HEIGHT="71" WIDTH="27" VPOS="2489" HPOS="1667"/><SP WIDTH="24" VPOS="2477" HPOS="1669"/><String WC="0.8000000119" CONTENT="37." HEIGHT="49" WIDTH="24" VPOS="2428" HPOS="1669"/><SP WIDTH="25" VPOS="2408" HPOS="1669"/><String WC="0.8650000095" CONTENT="Caesar" HEIGHT="109" WIDTH="26" VPOS="2299" HPOS="1668"/><SP WIDTH="19" VPOS="2281" HPOS="1674"/><String WC="1." CONTENT="van" HEIGHT="51" WIDTH="17" VPOS="2230" HPOS="1675"/><SP WIDTH="24" VPOS="2207" HPOS="1668"/><String WC="0.7272727489" CONTENT="Everdingen," HEIGHT="184" WIDTH="34" VPOS="2023" HPOS="1666"/><SP WIDTH="29" VPOS="2003" HPOS="1668"/><String WC="0.7966666818" CONTENT="Apollo" HEIGHT="99" WIDTH="32" VPOS="1904" HPOS="1667"/><SP WIDTH="17" VPOS="1884" HPOS="1674"/><String WC="0.6233333349" CONTENT="und" HEIGHT="53" WIDTH="24" VPOS="1831" HPOS="1667"/><SP WIDTH="26" VPOS="1807" HPOS="1666"/><String WC="0.8942857385" CONTENT="Daphne," HEIGHT="125" WIDTH="33" VPOS="1682" HPOS="1666"/></TextLine>
+<TextLine HEIGHT="500" WIDTH="35" VPOS="1867" HPOS="1708"><String WC="0.7937499881" CONTENT="Haarlem," HEIGHT="140" WIDTH="31" VPOS="2227" HPOS="1711"/><SP WIDTH="30" VPOS="2204" HPOS="1711"/><String WC="1." CONTENT="Frans" HEIGHT="86" WIDTH="27" VPOS="2117" HPOS="1710"/><SP WIDTH="24" VPOS="2094" HPOS="1712"/><String WC="0.7991666794" CONTENT="Hals-Museum." HEIGHT="226" WIDTH="27" VPOS="1867" HPOS="1710"/></TextLine>
+</TextBlock>
+<Illustration ID="Page1_Block7" HEIGHT="1027" WIDTH="1410" VPOS="406" HPOS="202"><Shape><Polygon POINTS="1746,226 2764,226 2764,1630 1746,1630 1746,226"/></Shape></Illustration>
+<TextBlock ID="Page1_Block8" HEIGHT="882" WIDTH="88" VPOS="475" HPOS="1654" language="de"><Shape><Polygon POINTS="1813,1678 2694,1678 2694,1760 1813,1760 1813,1678"/></Shape>
+<TextLine HEIGHT="869" WIDTH="43" VPOS="482" HPOS="1658"><String WC="1." CONTENT="Abb." HEIGHT="72" WIDTH="26" VPOS="1279" HPOS="1665"/><SP WIDTH="24" VPOS="1267" HPOS="1666"/><String WC="1." CONTENT="38." HEIGHT="49" WIDTH="25" VPOS="1218" HPOS="1665"/><SP WIDTH="25" VPOS="1196" HPOS="1665"/><String WC="0.7459999919" CONTENT="Louis" HEIGHT="83" WIDTH="25" VPOS="1113" HPOS="1665"/><SP WIDTH="25" VPOS="1094" HPOS="1664"/><String WC="0.9200000167" CONTENT="de" HEIGHT="35" WIDTH="24" VPOS="1059" HPOS="1664"/><SP WIDTH="25" VPOS="1039" HPOS="1664"/><String WC="0.7133333087" CONTENT="Silvestre" HEIGHT="134" WIDTH="27" VPOS="905" HPOS="1663"/><SP WIDTH="24" VPOS="886" HPOS="1665"/><String WC="1." CONTENT="d." HEIGHT="25" WIDTH="25" VPOS="861" HPOS="1664"/><SP WIDTH="24" VPOS="851" HPOS="1665"/><String WC="0.7966666818" CONTENT="J.," HEIGHT="33" WIDTH="28" VPOS="818" HPOS="1665"/><SP WIDTH="29" VPOS="799" HPOS="1664"/><String WC="0.7950000167" CONTENT="Apollo" HEIGHT="98" WIDTH="31" VPOS="701" HPOS="1663"/><SP WIDTH="17" VPOS="681" HPOS="1670"/><String WC="0.7933333516" CONTENT="und" HEIGHT="52" WIDTH="25" VPOS="629" HPOS="1662"/><SP WIDTH="24" VPOS="606" HPOS="1662"/><String WC="0.7614285946" CONTENT="Daphne," HEIGHT="124" WIDTH="33" VPOS="482" HPOS="1661"/></TextLine>
+<TextLine HEIGHT="163" WIDTH="28" VPOS="826" HPOS="1706"><String WC="0.9549999833" CONTENT="Sanssouci." HEIGHT="163" WIDTH="28" VPOS="826" HPOS="1706"/></TextLine>
+</TextBlock>
+<TextBlock ID="Page1_Block9" HEIGHT="48" WIDTH="228" VPOS="201" HPOS="1678" language="de"><Shape><Polygon POINTS="2921,1704 2968,1704 2968,1931 2921,1931 2921,1704"/></Shape>
+<TextLine HEIGHT="37" WIDTH="215" VPOS="206" HPOS="1684"><String WC="0.9660000205" CONTENT="Tafel" HEIGHT="33" WIDTH="95" VPOS="207" HPOS="1684"/><SP WIDTH="21" VPOS="207" HPOS="1779"/><String WC="0.9860000014" CONTENT="XVIII" HEIGHT="34" WIDTH="99" VPOS="208" HPOS="1800"/></TextLine>
+</TextBlock><GraphicalElement ID="Page1_Block10" HEIGHT="163" WIDTH="10" VPOS="1029" HPOS="208"/><GraphicalElement ID="Page1_Block11" HEIGHT="170" WIDTH="6" VPOS="2080" HPOS="220"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

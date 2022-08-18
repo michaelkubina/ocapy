@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2409">
+<BottomMargin HEIGHT="1" WIDTH="2409" VPOS="3158" HPOS="0">
+</BottomMargin>
+<PrintSpace HEIGHT="3158" WIDTH="2409" VPOS="0" HPOS="0">
+<Illustration ID="Page1_Block1" HEIGHT="3158" WIDTH="2409" VPOS="0" HPOS="0"><Shape><Polygon POINTS="12,1 406,1 406,2 674,2 674,3 943,3 943,4 1212,4 1212,5 1480,5 1480,6 1749,6 1749,7 2017,7 2017,8 2286,8 2286,9 2420,9 2420,376 2419,376 2419,645 2418,645 2418,914 2417,914 2417,1182 2416,1182 2416,1451 2415,1451 2415,1719 2414,1719 2414,1988 2413,1988 2413,2257 2412,2257 2412,2525 2411,2525 2411,2794 2410,2794 2410,3062 2409,3062 2409,3158 1,3158 1,2792 2,2792 2,2523 3,2523 3,2254 4,2254 4,1986 5,1986 5,1717 6,1717 6,1449 7,1449 7,1180 8,1180 8,911 9,911 9,643 10,643 10,374 11,374 11,106 12,106 12,1"/></Shape></Illustration><GraphicalElement ID="Page1_Block2" HEIGHT="12" WIDTH="519" VPOS="165" HPOS="1420"/><GraphicalElement ID="Page1_Block3" HEIGHT="8" WIDTH="282" VPOS="175" HPOS="1138"/><GraphicalElement ID="Page1_Block4" HEIGHT="600" WIDTH="23" VPOS="638" HPOS="212"/><GraphicalElement ID="Page1_Block5" HEIGHT="554" WIDTH="29" VPOS="2327" HPOS="222"/><GraphicalElement ID="Page1_Block6" HEIGHT="182" WIDTH="10" VPOS="2429" HPOS="241"/><GraphicalElement ID="Page1_Block7" HEIGHT="4" WIDTH="148" VPOS="182" HPOS="954"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

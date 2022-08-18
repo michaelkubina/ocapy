@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2019-02-04</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="2217" WIDTH="1798">
+<PrintSpace HEIGHT="2217" WIDTH="1798" VPOS="0" HPOS="0">
+<Illustration ID="Page1_Block1" HEIGHT="2217" WIDTH="1798" VPOS="0" HPOS="0"><Shape><Polygon POINTS="1740,4 1803,4 1803,65 1804,65 1804,176 1805,176 1805,280 1804,280 1804,287 1805,287 1805,397 1806,397 1806,508 1807,508 1807,619 1808,619 1808,700 1807,700 1807,730 1808,730 1808,840 1809,840 1809,951 1810,951 1810,1062 1811,1062 1811,1120 1810,1120 1810,1172 1811,1172 1811,1283 1812,1283 1812,1394 1813,1394 1813,1505 1814,1505 1814,1540 1813,1540 1813,1615 1814,1615 1814,1726 1815,1726 1815,1837 1816,1837 1816,1948 1817,1948 1817,1960 1816,1960 1816,2058 1817,2058 1817,2169 1818,2169 1818,2221 1743,2221 1743,2222 1633,2222 1633,2223 1411,2223 1411,2224 1301,2224 1301,2225 1190,2225 1190,2226 969,2226 969,2227 858,2227 858,2228 747,2228 747,2229 526,2229 526,2230 415,2230 415,2231 303,2231 303,2232 83,2232 83,2233 20,2233 20,2172 19,2172 19,2061 18,2061 18,1957 19,1957 19,1950 18,1950 18,1840 17,1840 17,1729 16,1729 16,1618 15,1618 15,1537 16,1537 16,1507 15,1507 15,1397 14,1397 14,1286 13,1286 13,1175 12,1175 12,1117 13,1117 13,1065 12,1065 12,954 11,954 11,843 10,843 10,732 9,732 9,697 10,697 10,622 9,622 9,511 8,511 8,400 7,400 7,289 6,289 6,277 7,277 7,179 6,179 6,68 5,68 5,16 80,16 80,15 190,15 190,14 412,14 412,13 522,13 522,12 633,12 633,11 854,11 854,10 965,10 965,9 1076,9 1076,8 1297,8 1297,7 1408,7 1408,6 1520,6 1520,5 1740,5 1740,4"/></Shape></Illustration><GraphicalElement ID="Page1_Block2" HEIGHT="35" WIDTH="867" VPOS="71" HPOS="470"/><GraphicalElement ID="Page1_Block3" HEIGHT="13" WIDTH="411" VPOS="134" HPOS="664"/><GraphicalElement ID="Page1_Block4" HEIGHT="9" WIDTH="220" VPOS="132" HPOS="399"/><GraphicalElement ID="Page1_Block5" HEIGHT="20" WIDTH="331" VPOS="195" HPOS="693"/><GraphicalElement ID="Page1_Block6" HEIGHT="19" WIDTH="1205" VPOS="210" HPOS="298"/><GraphicalElement ID="Page1_Block7" HEIGHT="752" WIDTH="13" VPOS="199" HPOS="88"/>
+<Illustration ID="Page1_Block8" HEIGHT="63" WIDTH="106" VPOS="1111" HPOS="1274"><Shape><Polygon POINTS="1287,1119 1392,1119 1392,1181 1287,1181 1287,1119"/></Shape></Illustration>
+<Illustration ID="Page1_Block9" HEIGHT="77" WIDTH="298" VPOS="527" HPOS="732"><Shape><Polygon POINTS="741,539 1039,539 1039,613 741,613 741,539"/></Shape></Illustration>
+<Illustration ID="Page1_Block10" HEIGHT="106" WIDTH="41" VPOS="533" HPOS="1242"><Shape><Polygon POINTS="1252,541 1292,541 1292,647 1252,647 1252,541"/></Shape></Illustration>
+<Illustration ID="Page1_Block11" HEIGHT="100" WIDTH="52" VPOS="786" HPOS="1191"><Shape><Polygon POINTS="1202,794 1253,794 1253,894 1202,894 1202,794"/></Shape></Illustration>
+<Illustration ID="Page1_Block12" HEIGHT="130" WIDTH="53" VPOS="1329" HPOS="1166"><Shape><Polygon POINTS="1181,1338 1233,1338 1233,1467 1181,1467 1181,1338"/></Shape></Illustration>
+<Illustration ID="Page1_Block13" HEIGHT="98" WIDTH="82" VPOS="1681" HPOS="800"><Shape><Polygon POINTS="817,1692 898,1692 898,1789 817,1789 817,1692"/></Shape></Illustration>
+<Illustration ID="Page1_Block14" HEIGHT="110" WIDTH="47" VPOS="2107" HPOS="165"><Shape><Polygon POINTS="185,2122 231,2122 231,2233 185,2233 185,2122"/></Shape></Illustration>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

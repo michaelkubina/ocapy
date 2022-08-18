@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2464">
+<TopMargin HEIGHT="227" WIDTH="2464" VPOS="0" HPOS="0">
+</TopMargin>
+<LeftMargin HEIGHT="2514" WIDTH="72" VPOS="227" HPOS="0">
+</LeftMargin>
+<RightMargin HEIGHT="2514" WIDTH="554" VPOS="227" HPOS="1910">
+</RightMargin>
+<BottomMargin HEIGHT="418" WIDTH="2464" VPOS="2741" HPOS="0">
+</BottomMargin>
+<PrintSpace HEIGHT="2514" WIDTH="1838" VPOS="227" HPOS="72">
+<TextBlock ID="Page1_Block1" HEIGHT="48" WIDTH="170" VPOS="227" HPOS="1740" language="de">
+<TextLine HEIGHT="36" WIDTH="158" VPOS="233" HPOS="1746"><String WC="0.9279999733" CONTENT="Tafel" HEIGHT="35" WIDTH="99" VPOS="233" HPOS="1746"/><SP WIDTH="19" VPOS="234" HPOS="1844"/><String WC="0.8349999785" CONTENT="VI" HEIGHT="34" WIDTH="41" VPOS="235" HPOS="1863"/></TextLine>
+</TextBlock>
+<ComposedBlock ID="Page1_Block2" HEIGHT="873" WIDTH="1623" VPOS="451" HPOS="106" TYPE="container"><Shape><Polygon POINTS="324,433 1963,433 1963,1336 324,1336 324,433"/></Shape>
+<Illustration ID="Page1_Block3" HEIGHT="871" WIDTH="1623" VPOS="452" HPOS="106"><Shape><Polygon POINTS="324,433 1813,433 1813,500 1803,500 1803,531 1802,531 1802,573 1853,573 1853,579 1861,579 1861,818 1963,818 1963,1336 324,1336 324,433"/></Shape></Illustration>
+<TextBlock ID="Page1_Block4" HEIGHT="161" WIDTH="147" VPOS="517" HPOS="1542" language="de"><Shape><Polygon POINTS="1813,496 1948,496 1948,656 1870,656 1870,558 1802,558 1802,531 1803,531 1803,500 1813,500 1813,496"/></Shape>
+<TextLine HEIGHT="44" WIDTH="68" VPOS="566" HPOS="1544"><String WC="0.5649999976" CONTENT="■ü" HEIGHT="44" WIDTH="68" VPOS="566" HPOS="1544"/></TextLine>
+<TextLine HEIGHT="30" WIDTH="77" VPOS="604" HPOS="1610"><String WC="0.25" CONTENT="/" HEIGHT="30" WIDTH="22" VPOS="604" HPOS="1610"/><SP WIDTH="39" VPOS="604" HPOS="1631"/><String WC="0.275000006" CONTENT="*;" HEIGHT="24" WIDTH="18" VPOS="606" HPOS="1669"/></TextLine>
+<TextLine HEIGHT="42" WIDTH="39" VPOS="635" HPOS="1614"><String WC="0.2399999946" CONTENT="/." HEIGHT="42" WIDTH="39" VPOS="635" HPOS="1614"/></TextLine>
+</TextBlock></ComposedBlock>
+<TextBlock ID="Page1_Block5" HEIGHT="50" WIDTH="1383" VPOS="1394" HPOS="286" language="de"><Shape><Polygon POINTS="360,1421 1890,1421 1890,1471 360,1471 360,1421"/></Shape>
+<TextLine HEIGHT="38" WIDTH="1372" VPOS="1400" HPOS="292"><String WC="0.8757143021" CONTENT="Abb.15." HEIGHT="26" WIDTH="135" VPOS="1404" HPOS="292"/><SP WIDTH="23" VPOS="1404" HPOS="423"/><String WC="0.8733333349" CONTENT="Fr." HEIGHT="26" WIDTH="45" VPOS="1403" HPOS="442"/><SP WIDTH="20" VPOS="1403" HPOS="483"/><String WC="0.8366666436" CONTENT="Buonsignori," HEIGHT="31" WIDTH="200" VPOS="1403" HPOS="498"/><SP WIDTH="26" VPOS="1403" HPOS="693"/><String WC="0.9369999766" CONTENT="Geschichte" HEIGHT="26" WIDTH="176" VPOS="1402" HPOS="715"/><SP WIDTH="23" VPOS="1403" HPOS="887"/><String WC="0.9466666579" CONTENT="der" HEIGHT="24" WIDTH="54" VPOS="1403" HPOS="907"/><SP WIDTH="25" VPOS="1403" HPOS="957"/><String WC="0.7857142687" CONTENT="Daphne," HEIGHT="33" WIDTH="129" VPOS="1402" HPOS="979"/><SP WIDTH="25" VPOS="1402" HPOS="1104"/><String WC="0.5445454717" CONTENT="Settignano," HEIGHT="32" WIDTH="176" VPOS="1402" HPOS="1125"/><SP WIDTH="24" VPOS="1402" HPOS="1298"/><String WC="0.7049999833" CONTENT="Sammlung" HEIGHT="34" WIDTH="169" VPOS="1401" HPOS="1319"/><SP WIDTH="23" VPOS="1403" HPOS="1485"/><String WC="0.6444444656" CONTENT="Berenson." HEIGHT="26" WIDTH="158" VPOS="1403" HPOS="1505"/></TextLine>
+</TextBlock>
+<Illustration ID="Page1_Block6" HEIGHT="936" WIDTH="1667" VPOS="1638" HPOS="72"><Shape><Polygon POINTS="76,1702 1912,1702 1912,2875 76,2875 76,1702"/></Shape></Illustration>
+<TextBlock ID="Page1_Block7" HEIGHT="89" WIDTH="1357" VPOS="2652" HPOS="293" language="de"><Shape><Polygon POINTS="131,2990 1792,2990 1792,3107 131,3107 131,2990"/></Shape>
+<TextLine HEIGHT="36" WIDTH="975" VPOS="2656" HPOS="485"><String WC="1." CONTENT="Abb.16." HEIGHT="26" WIDTH="135" VPOS="2660" HPOS="485"/><SP WIDTH="26" VPOS="2660" HPOS="615"/><String WC="0.9921428561" CONTENT="Cassonemalerei" HEIGHT="27" WIDTH="253" VPOS="2659" HPOS="636"/><SP WIDTH="24" VPOS="2659" HPOS="884"/><String WC="1." CONTENT="mit" HEIGHT="24" WIDTH="51" VPOS="2659" HPOS="904"/><SP WIDTH="23" VPOS="2659" HPOS="951"/><String WC="1." CONTENT="der" HEIGHT="24" WIDTH="55" VPOS="2659" HPOS="970"/><SP WIDTH="20" VPOS="2659" HPOS="1021"/><String WC="0.5118181705" CONTENT="Verwandlung" HEIGHT="32" WIDTH="208" VPOS="2657" HPOS="1037"/><SP WIDTH="22" VPOS="2658" HPOS="1241"/><String WC="0.7266666889" CONTENT="der" HEIGHT="24" WIDTH="54" VPOS="2658" HPOS="1259"/><SP WIDTH="25" VPOS="2658" HPOS="1310"/><String WC="0.7428571582" CONTENT="Daphne," HEIGHT="34" WIDTH="128" VPOS="2656" HPOS="1332"/></TextLine>
+<TextLine HEIGHT="38" WIDTH="1338" VPOS="2698" HPOS="306"><String WC="0.9033333063" CONTENT="Paris," HEIGHT="31" WIDTH="92" VPOS="2705" HPOS="307"/><SP WIDTH="26" VPOS="2704" HPOS="394"/><String WC="0.9962499738" CONTENT="Sammlung" HEIGHT="33" WIDTH="173" VPOS="2703" HPOS="415"/><SP WIDTH="23" VPOS="2703" HPOS="584"/><String WC="0.9610000253" CONTENT="Lazzaroni," HEIGHT="30" WIDTH="161" VPOS="2703" HPOS="603"/><SP WIDTH="26" VPOS="2702" HPOS="760"/><String WC="0.9493749738" CONTENT="Oberitalienisch," HEIGHT="30" WIDTH="242" VPOS="2702" HPOS="782"/><SP WIDTH="25" VPOS="2710" HPOS="1022"/><String WC="1." CONTENT="um" HEIGHT="18" WIDTH="45" VPOS="2709" HPOS="1044"/><SP WIDTH="22" VPOS="2702" HPOS="1087"/><String WC="0.9375" CONTENT="1480" HEIGHT="25" WIDTH="84" VPOS="2701" HPOS="1107"/><SP WIDTH="22" VPOS="2699" HPOS="1188"/><String WC="0.5820000172" CONTENT="(nach" HEIGHT="33" WIDTH="86" VPOS="2699" HPOS="1207"/><SP WIDTH="24" VPOS="2701" HPOS="1291"/><String WC="0.6209999919" CONTENT="Schubring," HEIGHT="33" WIDTH="169" VPOS="2700" HPOS="1312"/><SP WIDTH="24" VPOS="2700" HPOS="1478"/><String WC="0.9077777863" CONTENT="Cassoni)." HEIGHT="34" WIDTH="145" VPOS="2698" HPOS="1499"/></TextLine>
+</TextBlock><Illustration ID="Page1_Block8" HEIGHT="34" WIDTH="110" VPOS="1233" HPOS="1131"/><Illustration ID="Page1_Block9" HEIGHT="64" WIDTH="55" VPOS="1960" HPOS="506"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

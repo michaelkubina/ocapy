@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2019-02-04</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="2247" WIDTH="1829">
+<PrintSpace HEIGHT="2247" WIDTH="1829" VPOS="0" HPOS="0">
+<Illustration ID="Page1_Block1" HEIGHT="2247" WIDTH="1829" VPOS="0" HPOS="0"><Shape><Polygon POINTS="1668,0 1829,0 1829,125 1830,125 1830,376 1831,376 1831,626 1832,626 1832,876 1833,876 1833,1126 1834,1126 1834,1376 1835,1376 1835,1626 1836,1626 1836,1876 1837,1876 1837,2247 1670,2247 1670,2248 1420,2248 1420,2249 1170,2249 1170,2250 920,2250 920,2251 9,2251 9,2129 8,2129 8,1878 7,1878 7,1628 6,1628 6,1378 5,1378 5,1128 4,1128 4,878 3,878 3,628 2,628 2,378 1,378 1,7 168,7 168,6 418,6 418,5 668,5 668,4 918,4 918,3 1168,3 1168,2 1418,2 1418,1 1668,1 1668,0"/></Shape></Illustration><GraphicalElement ID="Page1_Block2" HEIGHT="44" WIDTH="677" VPOS="124" HPOS="844"/><GraphicalElement ID="Page1_Block3" HEIGHT="28" WIDTH="577" VPOS="128" HPOS="267"/><GraphicalElement ID="Page1_Block4" HEIGHT="46" WIDTH="788" VPOS="162" HPOS="757"/><GraphicalElement ID="Page1_Block5" HEIGHT="12" WIDTH="519" VPOS="162" HPOS="177"/><GraphicalElement ID="Page1_Block6" HEIGHT="10" WIDTH="208" VPOS="176" HPOS="175"/><GraphicalElement ID="Page1_Block7" HEIGHT="178" WIDTH="16" VPOS="713" HPOS="73"/><GraphicalElement ID="Page1_Block8" HEIGHT="106" WIDTH="6" VPOS="473" HPOS="80"/><GraphicalElement ID="Page1_Block9" HEIGHT="578" WIDTH="8" VPOS="243" HPOS="93"/><GraphicalElement ID="Page1_Block10" HEIGHT="182" WIDTH="14" VPOS="1520" HPOS="122"/><GraphicalElement ID="Page1_Block11" HEIGHT="212" WIDTH="17" VPOS="1261" HPOS="125"/><GraphicalElement ID="Page1_Block12" HEIGHT="478" WIDTH="11" VPOS="1243" HPOS="144"/>
+<Illustration ID="Page1_Block13" HEIGHT="76" WIDTH="77" VPOS="298" HPOS="4"><Shape><Polygon POINTS="6,305 82,305 82,381 6,381 6,305"/></Shape></Illustration>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

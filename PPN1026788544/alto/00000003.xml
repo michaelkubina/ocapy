@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-12-04</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3158" WIDTH="2221">
+<TopMargin HEIGHT="1116" WIDTH="2221" VPOS="0" HPOS="0">
+</TopMargin>
+<LeftMargin HEIGHT="680" WIDTH="422" VPOS="1116" HPOS="0">
+</LeftMargin>
+<RightMargin HEIGHT="680" WIDTH="492" VPOS="1116" HPOS="1729">
+</RightMargin>
+<BottomMargin HEIGHT="1362" WIDTH="2221" VPOS="1796" HPOS="0">
+<TextBlock ID="Page1_Block1" HEIGHT="62" WIDTH="139" VPOS="1908" HPOS="1003" language="de">
+<TextLine HEIGHT="50" WIDTH="133" VPOS="1914" HPOS="1003"><String WC="0." CONTENT="W" HEIGHT="50" WIDTH="120" VPOS="1914" HPOS="1003"/><String STYLE="superscript" WC="0.2399999946" CONTENT="5" HEIGHT="15" WIDTH="13" VPOS="1920" HPOS="1123"/></TextLine>
+</TextBlock><GraphicalElement ID="Page1_Block2" HEIGHT="4" WIDTH="132" VPOS="1914" HPOS="1007"/>
+</BottomMargin>
+<PrintSpace HEIGHT="680" WIDTH="1307" VPOS="1116" HPOS="422">
+<TextBlock ID="Page1_Block3" HEIGHT="52" WIDTH="297" VPOS="1116" HPOS="922" language="de">
+<TextLine HEIGHT="40" WIDTH="286" VPOS="1122" HPOS="928"><String WC="0.5" CONTENT="reich" HEIGHT="32" WIDTH="116" VPOS="1123" HPOS="928"/><SP WIDTH="1" VPOS="1122" HPOS="1045"/><String WC="0.3980000019" CONTENT="halt!" HEIGHT="32" WIDTH="110" VPOS="1122" HPOS="1047"/><SP WIDTH="4" VPOS="1123" HPOS="1158"/><String WC="0.3100000024" CONTENT="ge" HEIGHT="30" WIDTH="51" VPOS="1132" HPOS="1163"/></TextLine>
+</TextBlock>
+<TextBlock ID="Page1_Block4" HEIGHT="98" WIDTH="1281" VPOS="1227" HPOS="435" language="de">
+<TextLine HEIGHT="86" WIDTH="1270" VPOS="1233" HPOS="441"><String WC="0.5960000157" CONTENT="GEMÄLDESAMMLUNG" HEIGHT="86" WIDTH="1270" VPOS="1233" HPOS="441"/></TextLine>
+</TextBlock>
+<TextBlock ID="Page1_Block5" HEIGHT="45" WIDTH="377" VPOS="1401" HPOS="882" language="de">
+<TextLine HEIGHT="33" WIDTH="365" VPOS="1407" HPOS="888"><String WC="0.3366666734" CONTENT="aus" HEIGHT="20" WIDTH="58" VPOS="1420" HPOS="888"/><SP WIDTH="24" VPOS="1408" HPOS="947"/><String WC="0.9200000167" CONTENT="dem" HEIGHT="32" WIDTH="74" VPOS="1408" HPOS="972"/><SP WIDTH="23" VPOS="1407" HPOS="1047"/><String WC="0.4966666698" CONTENT="Nachlasse" HEIGHT="33" WIDTH="182" VPOS="1407" HPOS="1071"/></TextLine>
+</TextBlock>
+<TextBlock ID="Page1_Block6" HEIGHT="165" WIDTH="993" VPOS="1510" HPOS="577" language="de">
+<TextLine HEIGHT="25" WIDTH="140" VPOS="1516" HPOS="1003"><String WC="0.5666666627" CONTENT="der" HEIGHT="24" WIDTH="47" VPOS="1517" HPOS="1003"/><SP WIDTH="16" VPOS="1516" HPOS="1051"/><String WC="0.3700000048" CONTENT="Frau" HEIGHT="24" WIDTH="75" VPOS="1516" HPOS="1068"/></TextLine>
+<TextLine HEIGHT="56" WIDTH="981" VPOS="1613" HPOS="583"><String WC="0.2700000107" CONTENT="W" HEIGHT="48" WIDTH="59" VPOS="1616" HPOS="583"/><String STYLE="superscript" WC="0.2700000107" CONTENT="we" HEIGHT="23" WIDTH="49" VPOS="1626" HPOS="645"/><SP WIDTH="33" VPOS="1617" HPOS="695"/><String WC="0.4314285815" CONTENT="Hofrath" HEIGHT="47" WIDTH="227" VPOS="1617" HPOS="729"/><SP WIDTH="38" VPOS="1616" HPOS="957"/><String WC="0.3224999905" CONTENT="I)r." HEIGHT="46" WIDTH="81" VPOS="1616" HPOS="996"/><SP WIDTH="32" VPOS="1615" HPOS="1078"/><String WC="0.5479999781" CONTENT="Ewich" HEIGHT="48" WIDTH="169" VPOS="1615" HPOS="1111"/><SP WIDTH="32" VPOS="1616" HPOS="1281"/><String WC="0.4499999881" CONTENT="zu" HEIGHT="32" WIDTH="61" VPOS="1630" HPOS="1314"/><SP WIDTH="32" VPOS="1613" HPOS="1376"/><String WC="0.5419999957" CONTENT="Köln," HEIGHT="56" WIDTH="155" VPOS="1613" HPOS="1409"/></TextLine>
+</TextBlock>
+<TextBlock ID="Page1_Block7" HEIGHT="49" WIDTH="572" VPOS="1747" HPOS="789" language="de">
+<TextLine HEIGHT="37" WIDTH="561" VPOS="1753" HPOS="794"><String WC="0.4399999976" CONTENT="und" HEIGHT="36" WIDTH="85" VPOS="1754" HPOS="794"/><SP WIDTH="27" VPOS="1754" HPOS="880"/><String WC="0.6850000024" CONTENT="kleinere" HEIGHT="35" WIDTH="182" VPOS="1754" HPOS="908"/><SP WIDTH="27" VPOS="1753" HPOS="1091"/><String WC="0.4970000088" CONTENT="Nachlässe." HEIGHT="37" WIDTH="236" VPOS="1753" HPOS="1119"/></TextLine>
+</TextBlock>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

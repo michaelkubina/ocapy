@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2476">
+<TopMargin HEIGHT="1421" WIDTH="2476" VPOS="0" HPOS="0"><GraphicalElement ID="Page1_Block1" HEIGHT="5" WIDTH="87" VPOS="1404" HPOS="1286"/><GraphicalElement ID="Page1_Block2" HEIGHT="314" WIDTH="17" VPOS="1047" HPOS="276"/><GraphicalElement ID="Page1_Block3" HEIGHT="43" WIDTH="2" VPOS="1378" HPOS="211"/><GraphicalElement ID="Page1_Block4" HEIGHT="48" WIDTH="6" VPOS="89" HPOS="294"/>
+</TopMargin>
+<LeftMargin HEIGHT="92" WIDTH="1284" VPOS="1421" HPOS="0">
+</LeftMargin>
+<RightMargin HEIGHT="92" WIDTH="927" VPOS="1421" HPOS="1549">
+</RightMargin>
+<BottomMargin HEIGHT="1646" WIDTH="2476" VPOS="1513" HPOS="0">
+</BottomMargin>
+<PrintSpace HEIGHT="92" WIDTH="265" VPOS="1421" HPOS="1284">
+<TextBlock ID="Page1_Block5" HEIGHT="92" WIDTH="265" VPOS="1421" HPOS="1284" language="de"><Shape><Polygon POINTS="1299,1434 1563,1434 1563,1525 1299,1525 1299,1434"/></Shape>
+<TextLine HEIGHT="40" WIDTH="259" VPOS="1426" HPOS="1290"><String WC="0.4046666622" CONTENT="Staats-i.Ur&apos;,&apos;^" HEIGHT="39" WIDTH="184" VPOS="1427" HPOS="1290"/><SP WIDTH="15" VPOS="1433" HPOS="1475"/><String WC="0.3849999905" CONTENT=":tfv" HEIGHT="26" WIDTH="59" VPOS="1429" HPOS="1490"/></TextLine>
+<TextLine HEIGHT="37" WIDTH="251" VPOS="1470" HPOS="1293"><String WC="0.5187500119" CONTENT="Kblloth-" HEIGHT="35" WIDTH="102" VPOS="1471" HPOS="1293"/><SP WIDTH="38" VPOS="1471" HPOS="1396"/><String WC="0.4650000036" CONTENT="Hai-" HEIGHT="27" WIDTH="46" VPOS="1471" HPOS="1435"/><SP WIDTH="26" VPOS="1479" HPOS="1482"/><String WC="0.3533333242" CONTENT="jrj" HEIGHT="28" WIDTH="35" VPOS="1476" HPOS="1509"/></TextLine>
+</TextBlock>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

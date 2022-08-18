@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2018-03-22</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>11</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3159" WIDTH="2433">
+<TopMargin HEIGHT="192" WIDTH="2433" VPOS="0" HPOS="0">
+</TopMargin>
+<LeftMargin HEIGHT="2503" WIDTH="288" VPOS="192" HPOS="0">
+</LeftMargin>
+<RightMargin HEIGHT="2503" WIDTH="174" VPOS="192" HPOS="2259">
+</RightMargin>
+<BottomMargin HEIGHT="464" WIDTH="2433" VPOS="2695" HPOS="0">
+</BottomMargin>
+<PrintSpace HEIGHT="2503" WIDTH="1971" VPOS="192" HPOS="288">
+<TextBlock ID="Page1_Block1" HEIGHT="48" WIDTH="258" VPOS="222" HPOS="1687" language="de"><Shape><Polygon POINTS="1721,247 1978,247 1978,293 1721,293 1721,247"/></Shape>
+<TextLine HEIGHT="37" WIDTH="246" VPOS="228" HPOS="1693"><String WC="0.6539999843" CONTENT="Tafel" HEIGHT="33" WIDTH="97" VPOS="230" HPOS="1693"/><SP WIDTH="21" VPOS="230" HPOS="1790"/><String WC="0.9233333468" CONTENT="XXXIII" HEIGHT="36" WIDTH="128" VPOS="228" HPOS="1811"/></TextLine>
+</TextBlock>
+<Illustration ID="Page1_Block2" HEIGHT="2503" WIDTH="1971" VPOS="192" HPOS="288"><Shape><Polygon POINTS="1975,218 2279,218 2279,853 2273,853 2273,855 2279,855 2279,1647 2276,1647 2276,1649 2279,1649 2279,2703 1469,2703 1469,2711 515,2711 515,2583 322,2583 322,290 1975,290 1975,218"/></Shape></Illustration><GraphicalElement ID="Page1_Block3" HEIGHT="38" WIDTH="4" VPOS="1868" HPOS="2228"/>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>

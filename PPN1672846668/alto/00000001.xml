@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v2#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v2# http://www.loc.gov/standards/alto/alto-v2.0.xsd">
+<Description>
+<MeasurementUnit>pixel</MeasurementUnit>
+<OCRProcessing ID="IdOcr"><ocrProcessingStep><processingDateTime>2022-04-04</processingDateTime><processingSoftware><softwareCreator>ABBYY</softwareCreator><softwareName>ABBYY FineReader Engine</softwareName><softwareVersion>12</softwareVersion></processingSoftware></ocrProcessingStep></OCRProcessing>
+</Description>
+<Styles>
+</Styles>
+<Layout>
+<Page ID="Page1" PHYSICAL_IMG_NR="1" HEIGHT="3017" WIDTH="3029">
+<TopMargin HEIGHT="101" WIDTH="3029" VPOS="0" HPOS="0">
+</TopMargin>
+<PrintSpace HEIGHT="2916" WIDTH="3029" VPOS="101" HPOS="0">
+<Illustration ID="Page1_Block1" HEIGHT="2925" WIDTH="3029" VPOS="92" HPOS="0"><Shape><Polygon POINTS="0,101 220,101 220,102 493,102 493,103 629,103 629,104 902,104 902,105 1176,105 1176,106 1312,106 1312,107 1585,107 1585,108 1722,108 1722,109 1995,109 1995,110 2268,110 2268,111 2404,111 2404,112 2677,112 2677,113 2950,113 2950,114 3029,114 3029,260 3028,260 3028,261 3029,261 3029,616 3028,616 3028,617 3029,617 3029,972 3028,972 3028,973 3029,973 3029,1328 3028,1328 3028,1329 3029,1329 3029,1684 3028,1684 3028,1685 3029,1685 3029,2753 3028,2753 3028,2754 3029,2754 3029,3017 0,3017 0,2757 1,2757 1,2756 0,2756 0,2401 1,2401 1,2400 0,2400 0,2045 1,2045 1,2044 0,2044 0,1689 1,1689 1,1688 0,1688 0,1333 1,1333 1,1332 0,1332 0,264 1,264 1,263 0,263 0,101"/></Shape></Illustration><GraphicalElement ID="Page1_Block2" HEIGHT="30" WIDTH="433" VPOS="110" HPOS="1028"/><GraphicalElement ID="Page1_Block3" HEIGHT="21" WIDTH="1301" VPOS="2710" HPOS="1174"/><GraphicalElement ID="Page1_Block4" HEIGHT="6" WIDTH="304" VPOS="2710" HPOS="456"/>
+<Illustration ID="Page1_Block5" HEIGHT="96" WIDTH="424" VPOS="2739" HPOS="173"><Shape><Polygon POINTS="175,2740 216,2740 216,2741 489,2741 489,2742 596,2742 596,2754 597,2754 597,2805 596,2805 596,2834 352,2834 352,2833 215,2833 215,2832 174,2832 174,2803 175,2803 175,2756 174,2756 174,2741 175,2741 175,2740"/></Shape></Illustration>
+</PrintSpace>
+</Page>
+</Layout>
+</alto>
