@@ -238,7 +238,7 @@ for index, item in enumerate(pages_df_list):
 
 
 # a look at page 9 with five digits after the decimal point
-# equals three digits after the decimal point for percantages
+# equals three digits after the decimal point for percentages
 # remember: this is just a display property!
 pd.set_option('display.precision',5)    
 pages_df_list[8]
@@ -290,11 +290,11 @@ pages_df_list_report_df
 
 
 # ## Step 4 - Visualize the results
-# This step is core of the whole process. With our DataFrames we have all necessary values to work with and to visualize them. If we look at our list of DataFrames and our general statistic, we can already see, that our values range between 0.0 and 1.0, so its very easy to think of a heatmap-alike visualization. Here we use the famous warming stripes visualization for climate data, that with its stripes is somehow similiar to a books bound pages, when seen from the side. But furthermore, we want an in depth look at each page with all their textlines right down to each word.
+# This step is core of the whole process. With our DataFrames we have all necessary values to work with and to visualize them. If we look at our list of DataFrames and our general statistic, we can already see, that our values range between 0.0 and 1.0, so its very easy to think of a heatmap-alike visualization. Here we use the famous warming stripes visualization for climate data, that with its stripes is somehow similar to a books bound pages, when seen from the side. But furthermore, we want an in depth look at each page with all their textlines right down to each word.
 # 
 # So, what we want to try to achieve is:
 # * the general statistic will be a "warming strip" representanting a derived value (e.g. mean, median, etc) for each page.
-# * each page will be an image containing all its textlines stacked, with each textline being a seperate "warming stripe"
+# * each page will be an image containing all its textlines stacked, with each textline being a separate "warming stripe"
 
 # ### ... lets start easy with visualizing the general statistic
 #  The steps to create the warming stripes were found here: https://matplotlib.org/matplotblog/posts/warming-stripes/
@@ -317,7 +317,7 @@ if not os.path.exists(temp_dir):
 
 #last_item = pages_df_list[8].iloc[3].dropna().shape[0]
 
-# how many pages have actually values to work with => skip emtpy pages
+# how many pages have actually values to work with => skip empty pages
 last_item = pages_df_list_report_df['mean'].dropna().shape[0]
 
 # declare output figure as of fixed width and height
@@ -348,7 +348,7 @@ fig.savefig(images_dir + record_id + '.png')
 
 
 # ### ...now we need a function to concatenate multiple stripes into one single image
-# Since the above stripes (representing the mean confidence for each (written) page of the book) are not different, from how a single textline would appear, we need a function, that stacks all of those lines into one single image. Fortunatly there was an example using `Pillow` for this task.
+# Since the above stripes (representing the mean confidence for each (written) page of the book) are not different, from how a single textline would appear, we need a function, that stacks all of those lines into one single image. Fortunately there was an example using `Pillow` for this task.
 # 
 # In this form we can only concatenate two images into one, which means, that for multiple textlines we would concatenate each new line to the compound image, that we priorly created.
 
@@ -375,13 +375,13 @@ from shutil import copyfile
 
 # now lets create the "heatmap" for each page in our list of DataFrames
 for page_index, page in enumerate(pages_df_list):
-    # of course with each textline as seperate warming stripes
+    # of course with each textline as separate warming stripes
     for textline_index in range(0,(page.shape[0])):
         # print progress
         print("Page " + str(page_index) + " Line " + str(textline_index))
 
         # the next lines are basically the same as for the general statistic, thus no commentary
-        # it would've been better to put this whole process into a seperate function (DRY = don't repeat yourself)
+        # it would've been better to put this whole process into a separate function (DRY = don't repeat yourself)
         last_item = pages_df_list[page_index].iloc[textline_index].dropna().shape[0]
 
         fig = plt.figure(figsize=(10, 1))
@@ -406,7 +406,7 @@ for page_index, page in enumerate(pages_df_list):
         # if it's the first textline, simply store it
         if textline_index == 0:
             fig.savefig(temp_dir + str(page_index) + '.png')
-        # now with every additional textline concatenate the images (the new image with the last concatenated image or the very first image respectivly) )
+        # now with every additional textline concatenate the images (the new image with the last concatenated image or the very first image respectively) )
         if textline_index > 0:
             fig.savefig(temp_dir + 'concat.png')
             base = Image.open(temp_dir + str(page_index) + '.png')
@@ -420,7 +420,7 @@ for page_index, page in enumerate(pages_df_list):
         # overwrite condition
         if os.path.isfile(images_dir + str(page_index) + '.png'):
             os.remove(images_dir + str(page_index) + '.png')
-        # fallback for empty pages -> copy blank page representive
+        # fallback for empty pages -> copy blank page representative
         copyfile('ocapy/blank.png', images_dir + str(page_index) + '.png')
     else:
         # overwrite condition
@@ -550,7 +550,7 @@ with open(report_filename, 'wb') as report_file:
 
 # # Done
 # 
-# I might note, that this script is functioning very narrowly in a specific usecase, where it matches a certain interpretation of the METS/MODS schema. Also it can't be called with parameters, so it's not possible to use it conveniently through the command shell and to automate all this analysis - at least not in the scope of this graduation work. And of course, this script wont work on ALTO-XML without the WC-Attribut within the String-Element.
+# I might note, that this script is functioning very narrowly in a specific usecase, where it matches a certain interpretation of the METS/MODS schema. Also it can't be called with parameters, so it's not possible to use it conveniently through the command shell and to automate all this analysis - at least not in the scope of this graduation work. And of course, this script won't work on ALTO-XML without the WC-Attribute within the String-Element.
 # 
 # Feel free to adjust it to your needs or take a look at https://github.com/michaelkubina/ocapy if there have been any future updates. You will find this original graduation work unaltered in the "graduation_work"-branch with all corresponding documents.
 
