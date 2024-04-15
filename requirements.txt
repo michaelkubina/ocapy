@@ -1,0 +1,7 @@
+bs4
+lxml
+matplotlib
+pandas
+pillow
+requests
+seaborn

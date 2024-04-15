@@ -11,7 +11,7 @@ OCA.py is licensed under GPL3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ## Requirements
 
-The following python-libraries are required.
+The following Python libraries are required:
 
 * requests
 * BeautifulSoup
@@ -23,6 +23,8 @@ The following python-libraries are required.
 * pillow
 * shutil
 * seaborn
+
+Install them with `pip install -r requirements.txt`.
 
 This software also uses Bootstrap (https://getbootstrap.com/)
 
