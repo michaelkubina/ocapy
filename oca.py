@@ -44,18 +44,15 @@ record_id = "PPN86268370X" # about 150 pages, good ocr, high confidence
 # In[2]:
 
 
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
 import os
-import numpy as np
-from pprint import pprint
 
 import matplotlib.pyplot as plt
-from matplotlib.patches import Rectangle
+import numpy as np
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
 from matplotlib.collections import PatchCollection
-from matplotlib.colors import ListedColormap
-
+from matplotlib.patches import Rectangle
 
 # ## Function definitions
 
@@ -357,6 +354,7 @@ fig.savefig(images_dir + record_id + '.png')
 
 #https://note.nkmk.me/en/python-pillow-concat-images/
 from PIL import Image
+
 
 def get_concat_v(im1, im2):
     dst = Image.new('RGB', (im1.width, im1.height + im2.height))
