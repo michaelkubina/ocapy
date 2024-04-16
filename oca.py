@@ -491,7 +491,7 @@ mods_year = mets_soup.find('mods:dateIssued').string if mets_soup.find('mods:dat
 report_filename = record_id + "/" + record_id + "_report.html"
 
 # header and opening the HTML body
-report_start = '<!doctype html><html lang="en><head><meta charset="utf-8">                <meta name="viewport" content="width=device-width, initial-scale=1">                <title>OCA.py Report - ' + record_id + '</title>                <link href="../ocapy/bootstrap.min.css" rel="stylesheet"></head>                <body><script src="../ocapy/bootstrap.bundle.min.js"></script>'
+report_start = '<!doctype html><html lang="en"><head><meta charset="utf-8">                <meta name="viewport" content="width=device-width, initial-scale=1">                <title>OCA.py Report - ' + record_id + '</title>                <link href="../ocapy/bootstrap.min.css" rel="stylesheet"></head>                <body><script src="../ocapy/bootstrap.bundle.min.js"></script>'
 
 # closing the HTML body
 report_end = '</body></html>'
