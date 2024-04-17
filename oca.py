@@ -45,14 +45,20 @@ record_id = "PPN86268370X" # about 150 pages, good ocr, high confidence
 
 
 import os
+# we need a library, which allows copying files, once the temporary
+# warming stripes for each textline are concatenated and final
+from shutil import copyfile
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import requests
+import seaborn as sns
 from bs4 import BeautifulSoup
 from matplotlib.collections import PatchCollection
 from matplotlib.patches import Rectangle
+#https://note.nkmk.me/en/python-pillow-concat-images/
+from PIL import Image
 
 # ## Function definitions
 
@@ -352,10 +358,6 @@ fig.savefig(images_dir + record_id + '.png')
 # In[ ]:
 
 
-#https://note.nkmk.me/en/python-pillow-concat-images/
-from PIL import Image
-
-
 def get_concat_v(im1, im2):
     dst = Image.new('RGB', (im1.width, im1.height + im2.height))
     dst.paste(im1, (0, 0))
@@ -367,9 +369,6 @@ def get_concat_v(im1, im2):
 
 # In[ ]:
 
-
-# we need a library, which allows copying files, once the temporary warming stripes for each textline are concatenated and final
-from shutil import copyfile
 
 # now lets create the "heatmap" for each page in our list of DataFrames
 for page_index, page in enumerate(pages_df_list):
@@ -461,7 +460,6 @@ confidence_df.drop('level_1', axis=1, inplace=True)
 confidence_df
 
 # and print and save a distribution plot
-import seaborn as sns
 
 #sns.set_theme(style="whitegrid")
 g = sns.displot(
