@@ -127,7 +127,7 @@ download_if_not_exists(mets_filename, mets_url)
 
 
 # read the METS file
-mets=[]
+mets = []
 with open(mets_filename, 'r', encoding='utf-8') as file:
     mets = file.read()
 
@@ -172,7 +172,7 @@ pages_wc = []
 # loop through all ALTO files
 for alto_url in fulltext_path:
     # read the ALTO file
-    alto=[]
+    alto = []
     alto_filename = alto_dir + os.path.basename(alto_url)
     with open(alto_filename, 'r', encoding='utf-8') as file:
         alto = file.read()
@@ -341,7 +341,7 @@ col.set_cmap("brg")
 col.set_clim(0.0,1.0)
 ax.add_collection(col)
 ax.set_ylim(0, 1)
-ax.set_xlim(0, last_item +1)
+ax.set_xlim(0, last_item + 1)
 fig.savefig(images_dir + record_id + '.png')
 
 
@@ -392,7 +392,7 @@ for page_index, page in enumerate(pages_df_list):
         ax.add_collection(col)
 
         ax.set_ylim(0, 1)
-        ax.set_xlim(0, last_item +1)
+        ax.set_xlim(0, last_item + 1)
 
         # if it's the first textline, simply store it
         if textline_index == 0:
