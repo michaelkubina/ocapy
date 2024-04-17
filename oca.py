@@ -201,7 +201,7 @@ for alto_url in fulltext_path:
         # loop through all strings
         for item in strings:
             # extract word confidencies for the strings
-            string_wc.append(item['WC'])
+            string_wc.append(item.get('WC', '1.0'))
         # add string to textline sublist
         textlines_wc.append(string_wc)
 
