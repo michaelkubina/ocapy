@@ -394,7 +394,6 @@ for page_index, page in enumerate(pages_df_list):
         ax.set_ylim(0, 1)
         ax.set_xlim(0, last_item +1)
 
-
         # if it's the first textline, simply store it
         if textline_index == 0:
             fig.savefig(temp_dir + str(page_index) + '.png')
@@ -420,7 +419,6 @@ for page_index, page in enumerate(pages_df_list):
             os.remove(images_dir + str(page_index) + '.png')
         # rename actually moves the file from temp to images
         os.rename(temp_dir + str(page_index) + '.png', images_dir + str(page_index) + '.png')
-
 
 
 # ### ...now resize all images to an equal width and height
