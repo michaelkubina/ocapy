@@ -551,9 +551,3 @@ with open(report_filename, 'wb') as report_file:
 # I might note, that this script is functioning very narrowly in a specific usecase, where it matches a certain interpretation of the METS/MODS schema. Also it can't be called with parameters, so it's not possible to use it conveniently through the command shell and to automate all this analysis - at least not in the scope of this graduation work. And of course, this script won't work on ALTO-XML without the WC-Attribute within the String-Element.
 #
 # Feel free to adjust it to your needs or take a look at https://github.com/michaelkubina/ocapy if there have been any future updates. You will find this original graduation work unaltered in the "graduation_work"-branch with all corresponding documents.
-
-# In[ ]:
-
-
-
-
