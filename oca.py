@@ -132,7 +132,7 @@ with open(mets_filename, 'r', encoding='utf-8') as file:
     mets = file.read()
 
 # cook a soup
-mets_soup = BeautifulSoup(mets,"lxml-xml")
+mets_soup = BeautifulSoup(mets, "lxml-xml")
 
 # get all file location elements
 filegrp_fulltext = mets_soup.find('mets:fileGrp', { "USE" : "FULLTEXT" }).find_all('mets:FLocat')
@@ -178,7 +178,7 @@ for alto_url in fulltext_path:
         alto = file.read()
 
     # cook a soup
-    alto_soup = BeautifulSoup(alto,"lxml-xml")
+    alto_soup = BeautifulSoup(alto, "lxml-xml")
 
     # extract all textlines
     textlines = alto_soup.find_all('TextLine')
@@ -238,7 +238,7 @@ for index, item in enumerate(pages_df_list):
 # a look at page 9 with five digits after the decimal point
 # equals three digits after the decimal point for percentages
 # remember: this is just a display property!
-pd.set_option('display.precision',5)
+pd.set_option('display.precision', 5)
 pages_df_list[8]
 
 
@@ -338,7 +338,7 @@ col.set_array(pages_df_list_report_df['mean'].dropna())
 col.set_cmap("brg")
 
 # set limits, plot collection and save figure
-col.set_clim(0.0,1.0)
+col.set_clim(0.0, 1.0)
 ax.add_collection(col)
 ax.set_ylim(0, 1)
 ax.set_xlim(0, last_item + 1)
@@ -368,7 +368,7 @@ def get_concat_v(im1, im2):
 # now lets create the "heatmap" for each page in our list of DataFrames
 for page_index, page in enumerate(pages_df_list):
     # of course with each textline as separate warming stripes
-    for textline_index in range(0,(page.shape[0])):
+    for textline_index in range(0, (page.shape[0])):
         # print progress
         print("Page " + str(page_index) + " Line " + str(textline_index))
 
