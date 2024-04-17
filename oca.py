@@ -135,7 +135,7 @@ with open(mets_filename, 'r', encoding='utf-8') as file:
 mets_soup = BeautifulSoup(mets, "lxml-xml")
 
 # get all file location elements
-filegrp_fulltext = mets_soup.find('mets:fileGrp', { "USE" : "FULLTEXT" }).find_all('mets:FLocat')
+filegrp_fulltext = mets_soup.find('mets:fileGrp', {"USE": "FULLTEXT"}).find_all('mets:FLocat')
 
 # get all fulltext URLs from the xlink:href attribute
 fulltext_path = []
