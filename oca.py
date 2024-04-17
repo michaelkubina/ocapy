@@ -432,12 +432,12 @@ for filename in os.listdir(images_dir):
     # open the file
     with Image.open(images_dir + filename) as img:
         # resize it to the following width and height
-        (width, height) = (210, 298) # DIN A7 at screen resolution (72dpi)
+        (width, height) = (210, 298)  # DIN A7 at screen resolution (72dpi)
         img.resize((width, height), resample=Image.BOX).save(images_dir + filename)
 
 # do it again for the general statistic
 with Image.open(images_dir + record_id + '.png') as img:
-    (width, height) = (420, 595) # DIN A5 at screen resolution (72dpi)
+    (width, height) = (420, 595)  # DIN A5 at screen resolution (72dpi)
     img.resize((width, height), resample=Image.BOX).save(images_dir + record_id + '.png')
 
 
