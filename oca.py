@@ -49,6 +49,7 @@ import os
 # warming stripes for each textline are concatenated and final
 from shutil import copyfile
 
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -59,6 +60,9 @@ from matplotlib.collections import PatchCollection
 from matplotlib.patches import Rectangle
 # https://note.nkmk.me/en/python-pillow-concat-images/
 from PIL import Image
+
+# Don't use an interactive (and really slow) matplotlib backend.
+matplotlib.use('agg')
 
 # ## Function definitions
 
