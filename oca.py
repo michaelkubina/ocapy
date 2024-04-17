@@ -31,10 +31,10 @@
 
 
 # the test object(s)
-#record_id = "PPN1026788544" # about 50 pages, good ocr, low confidence
+# record_id = "PPN1026788544" # about 50 pages, good ocr, low confidence
 record_id = "PPN86268370X" # about 150 pages, good ocr, high confidence
-#record_id = "PPN1041860838" # about 350 pages, bad ocr -> wrong script, low confidence
-#record_id = "PPN1672846668" # about 100 pages, bad ocr -> wrong script, extreme high confidences, visible anomaly
+# record_id = "PPN1041860838" # about 350 pages, bad ocr -> wrong script, low confidence
+# record_id = "PPN1672846668" # about 100 pages, bad ocr -> wrong script, extreme high confidences, visible anomaly
 
 
 # ## Importing libraries
@@ -57,7 +57,7 @@ import seaborn as sns
 from bs4 import BeautifulSoup
 from matplotlib.collections import PatchCollection
 from matplotlib.patches import Rectangle
-#https://note.nkmk.me/en/python-pillow-concat-images/
+# https://note.nkmk.me/en/python-pillow-concat-images/
 from PIL import Image
 
 # ## Function definitions
@@ -83,10 +83,6 @@ def download_if_not_exists(filename, url):
     """
     Download a URL to a file if the file
     does not exist already.
-    Returns
-    -------
-    True if the file was downloaded,
-    False if it already existed
     """
     if not os.path.exists(filename):
         # create subfolders if necessary
@@ -97,11 +93,9 @@ def download_if_not_exists(filename, url):
         print("Retrieving: " + url, end="")
         download_file(filename, url)
         print(" -> Done!", end="\n")
-        #return True
         return
     # give feedback if we are using a local copy
     print("Using local copy: " + filename)
-    #return False
 
 
 # ## Step 1 - File download
@@ -318,7 +312,7 @@ if not os.path.exists(temp_dir):
     os.makedirs(temp_dir)
 
 
-#last_item = pages_df_list[8].iloc[3].dropna().shape[0]
+# last_item = pages_df_list[8].iloc[3].dropna().shape[0]
 
 # how many pages have actually values to work with => skip empty pages
 last_item = pages_df_list_report_df['mean'].dropna().shape[0]
@@ -461,7 +455,7 @@ confidence_df
 
 # and print and save a distribution plot
 
-#sns.set_theme(style="whitegrid")
+# sns.set_theme(style="whitegrid")
 g = sns.displot(
     confidence_df, x="Confidence", kde=True
 )
