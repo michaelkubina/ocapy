@@ -2,29 +2,29 @@
 # coding: utf-8
 
 # <img style="float: left; margin-right: 20px;" src="ocapy/ocapy_logo.jpeg">
-# 
+#
 # # OCA.py - Visualizing the word confidence of OCR results (ALTO-XML)
 # by Michael Kubina
-# 
+#
 # **OCA.py** is an acronym and describes this **O**CR **C**onfidence **A**nalysis script written in **py**thon.
-# 
+#
 # This is a graduation work for the 2022 Data Librarian Certificate Course from the Technical University Cologne. The result of the graduation work is a script, which is called OCA.py. The script was published in August 2022. This is the corresponding jupyter-notebook with additional insights.
-# 
+#
 # OCA.py is licensed under GPL3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 # ## Preface
-# 
+#
 # We will handle a lot of data and might be limited be the I/O data rate limit. So start the notebook with the following command, as suggested here: https://stackoverflow.com/questions/43490495/how-to-set-notebookapp-iopub-data-rate-limit-and-others-notebookapp-settings-in
-# 
+#
 # `jupyter notebook --NotebookApp.iopub_data_rate_limit=1e10`
 
 # ## Defining document corpus
-# 
+#
 # We need the METS file that holds a digital object together and has also some descriptive metadata. Furthermore we need all the ALTO files, that hold the OCR for each page. All the necessary files will be acquired through URLs, which follow a static pattern. We ignore any other files, that belong to the whole digital object, as we don't need those.
-# 
+#
 # * `https://mets.sub.uni-hamburg.de/kitodo/PPN872169685_0021` (METS)
 # * `https://img.sub.uni-hamburg.de/kitodo/PPN872169685_0021/00000053.xml` (ALTO)
-# 
+#
 # As we can see, the only thing we need is the record identifier.
 
 # In[1]:
@@ -38,8 +38,8 @@ record_id = "PPN86268370X" # about 150 pages, good ocr, high confidence
 
 
 # ## Importing libraries
-# 
-# This project will download files through the internet through `requests`. We will save/load those and other files from the filesystem `os`. 
+#
+# This project will download files through the internet through `requests`. We will save/load those and other files from the filesystem `os`.
 
 # In[2]:
 
@@ -72,7 +72,7 @@ def download_file(filename, url):
         # Write response data to file
         for block in response.iter_content(4096):
             fout.write(block)
-            
+
 def download_if_not_exists(filename, url):
     """
     Download a URL to a file if the file
@@ -99,7 +99,7 @@ def download_if_not_exists(filename, url):
 
 
 # ## Step 1 - File download
-# 
+#
 # The file download happens in three steps...
 
 # ### ... download the METS file
@@ -108,7 +108,7 @@ def download_if_not_exists(filename, url):
 
 
 # path to METS directory
-mets_dir = record_id + "/mets/" 
+mets_dir = record_id + "/mets/"
 
 # download the METS/MODS
 mets_url = "https://mets.sub.uni-hamburg.de/kitodo/" + str(record_id)
@@ -117,9 +117,9 @@ download_if_not_exists(mets_filename, mets_url)
 
 
 # ### ... extract the fulltext URLs
-# 
+#
 # The fulltext URLs are grouped in the `<mets:fileGrp USE="FULLTEXT"></mets:fileGrp>`
-# 
+#
 # Each fulltext has file location `<mets:FLocat LOCTYPE="URL" xlink:href="https://img.sub.uni-hamburg.de/kitodo/PPN863173349_0006/00000001.xml"/>`
 
 # In[5]:
@@ -156,7 +156,7 @@ for alto_url in fulltext_path:
 
 
 # ## Step 2 - Extract word confidencies
-# 
+#
 # Now that we have all the necessary files, we will create a nested list that holds all word confidencies together. The structure is:
 # * a main list representing all pages of the document
 # * for each page a sublist representing all textlines within it
@@ -175,37 +175,37 @@ for alto_url in fulltext_path:
     alto_filename = alto_dir + os.path.basename(alto_url)
     with open(alto_filename, 'r', encoding='utf-8') as file:
         alto = file.read()
-    
+
     # cook a soup
     alto_soup = BeautifulSoup(alto,"lxml-xml")
-    
+
     # extract all textlines
     textlines = alto_soup.find_all('TextLine')
-    
+
     # create sublist for textlines
     textlines_wc = []
-    
+
     # loop through all textlines
     for item in textlines:
         # extract al strings
         strings = item.find_all('String')
-        
+
         # create sublist for strings
         string_wc = []
-        
+
         # loop through all strings
         for item in strings:
             # extract word confidencies for the strings
             string_wc.append(item['WC'])
         # add string to textline sublist
         textlines_wc.append(string_wc)
-    
+
     # add textline to pages list
     pages_wc.append(textlines_wc)
 
 
 # ### ... create a list of DataFrames for all pages
-# 
+#
 # Each entry is a DataFrame for a single page, with the textlines as rows and the words as columns. We will format the axis accordingly and clean-up the DataFrames as well in order to process it later on. Otherwise mathematical operations would fail, as the entries would not be number types, but strings.
 
 # In[ ]:
@@ -219,7 +219,7 @@ for index, item in enumerate(pages_df_list):
     # rename the axis
     pages_df_list[index].index = ['Textline {}'.format(i+1) for i in range(item.shape[0])]
     pages_df_list[index].columns = ['Word {}'.format(i+1) for i in range(item.shape[1])]
-    
+
     # replace string "None" with NaN
     pages_df_list[index] = item.fillna(value=np.nan)
     # replace "1." with "1.0"
@@ -237,7 +237,7 @@ for index, item in enumerate(pages_df_list):
 # a look at page 9 with five digits after the decimal point
 # equals three digits after the decimal point for percentages
 # remember: this is just a display property!
-pd.set_option('display.precision',5)    
+pd.set_option('display.precision',5)
 pages_df_list[8]
 
 
@@ -288,7 +288,7 @@ pages_df_list_report_df
 
 # ## Step 4 - Visualize the results
 # This step is core of the whole process. With our DataFrames we have all necessary values to work with and to visualize them. If we look at our list of DataFrames and our general statistic, we can already see, that our values range between 0.0 and 1.0, so its very easy to think of a heatmap-alike visualization. Here we use the famous warming stripes visualization for climate data, that with its stripes is somehow similar to a books bound pages, when seen from the side. But furthermore, we want an in depth look at each page with all their textlines right down to each word.
-# 
+#
 # So, what we want to try to achieve is:
 # * the general statistic will be a "warming strip" representanting a derived value (e.g. mean, median, etc) for each page.
 # * each page will be an image containing all its textlines stacked, with each textline being a separate "warming stripe"
@@ -346,7 +346,7 @@ fig.savefig(images_dir + record_id + '.png')
 
 # ### ...now we need a function to concatenate multiple stripes into one single image
 # Since the above stripes (representing the mean confidence for each (written) page of the book) are not different, from how a single textline would appear, we need a function, that stacks all of those lines into one single image. Fortunately there was an example using `Pillow` for this task.
-# 
+#
 # In this form we can only concatenate two images into one, which means, that for multiple textlines we would concatenate each new line to the compound image, that we priorly created.
 
 # In[ ]:
@@ -399,8 +399,8 @@ for page_index, page in enumerate(pages_df_list):
 
         ax.set_ylim(0, 1)
         ax.set_xlim(0, last_item +1)
-        
-        
+
+
         # if it's the first textline, simply store it
         if textline_index == 0:
             fig.savefig(temp_dir + str(page_index) + '.png')
@@ -412,7 +412,7 @@ for page_index, page in enumerate(pages_df_list):
             get_concat_v(base, add).save(temp_dir + str(page_index) + '.png', 'PNG')
         # close the plot to free memory
         plt.close()
-        
+
     # now move the files from the temp folder to the images folder, since the temp folder is a temporary working directory
     if not os.path.exists(temp_dir + str(page_index) + '.png'):
         # overwrite condition
@@ -426,7 +426,7 @@ for page_index, page in enumerate(pages_df_list):
             os.remove(images_dir + str(page_index) + '.png')
         # rename actually moves the file from temp to images
         os.rename(temp_dir + str(page_index) + '.png', images_dir + str(page_index) + '.png')
-    
+
 
 
 # ### ...now resize all images to an equal width and height
@@ -468,13 +468,13 @@ g = sns.displot(
     confidence_df, x="Confidence", kde=True
 )
 g.figure.set_figwidth(12)
-g.figure.set_figheight(3) 
+g.figure.set_figheight(3)
 g.figure.savefig(images_dir + record_id + '_displot.png')
 
 
 # ## Step 5 - Generate Report
 # Now its finally time to put all the pieces together and to create a report. We will output a HTML file, which will inherit our images and statistics, but also some descriptive metadata. We will use `Bootstrap`, because it provides us with some neat looking CSS classes, a grid-system and a responsive web-design.
-# 
+#
 # Be advised, that its merely a proof of concept and the we are not extracting nearly as much metadata as we could and that we only use a limited set of features, that `Bootstrap` offers.
 
 # In[ ]:
@@ -525,11 +525,11 @@ for counter in range(len(fulltext_path)):
     # add new row each 6 cards
     if counter % 6 == 0:
         report_details += '<div class="row gx-2 m-1"></div><div class="row gx-2 m-1">'
-    
+
     # add card to row
     # each card is a detailed statistic for each page with the heatmap of each page
     report_details += '    <div class="col-lg-2 col-md-12 h-100">    <div class="card border-dark">    <a href="alto/' + str(counter + 1).zfill(8) + '.xml"><img src="images/' + str(counter) + '.png" class="card-img-top" alt="Page ' + str(counter + 1) + '"></a>    <div class="card-body">    <h5 class="card-title"><a href="https://pic.sub.uni-hamburg.de/kitodo/' + record_id + '/' + str(counter + 1).zfill(8) + '.tif" class="link-dark">Page ' + str(counter + 1) + '</a></h5>    <h6 class="card-subtitle mb-2 text-muted">Page Stats</h6>    <p class="font-monospace">    Words: ' + str(int(pages_df_list_report_df['count'].iloc[counter])) + '<br>    Lines: ' + str(len(pages_df_list[counter])) + '<br>    </p>    <h6 class="card-subtitle mb-2 text-muted">Word Confidence</h6>    <p class="font-monospace">    mean:&nbsp;' + str(pages_df_list_report_df['mean'].iloc[counter])[0:4] + '<br>    std:&nbsp;&nbsp;' + str(pages_df_list_report_df['std'].iloc[counter])[0:4] + '<br>    <br>    <!--min:&nbsp;&nbsp;' + str(pages_df_list_report_df['min'].iloc[counter])[0:4] + '<br>-->    25%:&nbsp;&nbsp;' + str(pages_df_list_report_df['25%'].iloc[counter])[0:4] + '<br>    50%:&nbsp;&nbsp;' + str(pages_df_list_report_df['50%'].iloc[counter])[0:4] + '<br>    75%:&nbsp;&nbsp;' + str(pages_df_list_report_df['75%'].iloc[counter])[0:4] + '<br>    <!--max:&nbsp;&nbsp;' + str(pages_df_list_report_df['max'].iloc[counter])[0:4] + '-->    </p>    </div>    </div>    </div>'
-    
+
 # close container if end of document
 report_details += '</div>'
 
@@ -547,9 +547,9 @@ with open(report_filename, 'wb') as report_file:
 
 
 # # Done
-# 
+#
 # I might note, that this script is functioning very narrowly in a specific usecase, where it matches a certain interpretation of the METS/MODS schema. Also it can't be called with parameters, so it's not possible to use it conveniently through the command shell and to automate all this analysis - at least not in the scope of this graduation work. And of course, this script won't work on ALTO-XML without the WC-Attribute within the String-Element.
-# 
+#
 # Feel free to adjust it to your needs or take a look at https://github.com/michaelkubina/ocapy if there have been any future updates. You will find this original graduation work unaltered in the "graduation_work"-branch with all corresponding documents.
 
 # In[ ]:
