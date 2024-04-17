@@ -29,4 +29,17 @@ Install them with `pip install -r requirements.txt`.
 This software also uses Bootstrap (https://getbootstrap.com/)
 
 ## Usage
-In this graduation_work branch, the script is specifically tailored towards the METS-file-location from the Staats- und Universitätsbibliothek Hamburg. You only need to provide the record identifier in order to use it. This also means, that you can currently just test it on objects from this specific library. For other METS-files a refactoring is necessary.
+In this graduation_work branch, the script is specifically tailored towards the METS-file-location from the Staats- und Universitätsbibliothek Hamburg. You only need to provide the record identifier in order to use it.
+
+Examples for SUB Hamburg:
+```
+oca.py PPN1026788544 # about 50 pages, good ocr, low confidence
+oca.py PPN86268370X  # about 150 pages, good ocr, high confidence
+oca.py PPN1041860838 # about 350 pages, bad ocr -> wrong script, low confidence
+oca.py PPN1672846668 # about 100 pages, bad ocr -> wrong script, extreme high confidences, visible anomaly
+```
+
+METS files from other libraries can be processed by passing the METS URL in addition to the record identifier:
+```
+oca.py --mets https://digi.bib.uni-mannheim.de/fileadmin/digi/1885328680/1885328680.xml PPN1885328680
+```

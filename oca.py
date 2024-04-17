@@ -14,7 +14,7 @@
 
 # ## Preface
 #
-# We will handle a lot of data and might be limited be the I/O data rate limit. So start the notebook with the following command, as suggested here: https://stackoverflow.com/questions/43490495/how-to-set-notebookapp-iopub-data-rate-limit-and-others-notebookapp-settings-in
+# We will handle a lot of data and might be limited by the I/O data rate limit. So start the notebook with the following command, as suggested here: https://stackoverflow.com/questions/43490495/how-to-set-notebookapp-iopub-data-rate-limit-and-others-notebookapp-settings-in
 #
 # `jupyter notebook --NotebookApp.iopub_data_rate_limit=1e10`
 
@@ -32,7 +32,7 @@
 
 # the test object(s)
 # record_id = "PPN1026788544" # about 50 pages, good ocr, low confidence
-record_id = "PPN86268370X" # about 150 pages, good ocr, high confidence
+# record_id = "PPN86268370X"  # about 150 pages, good ocr, high confidence
 # record_id = "PPN1041860838" # about 350 pages, bad ocr -> wrong script, low confidence
 # record_id = "PPN1672846668" # about 100 pages, bad ocr -> wrong script, extreme high confidences, visible anomaly
 
@@ -44,6 +44,7 @@ record_id = "PPN86268370X" # about 150 pages, good ocr, high confidence
 # In[2]:
 
 
+import argparse
 import os
 # we need a library, which allows copying files, once the temporary
 # warming stripes for each textline are concatenated and final
@@ -61,8 +62,28 @@ from matplotlib.patches import Rectangle
 # https://note.nkmk.me/en/python-pillow-concat-images/
 from PIL import Image
 
+parser = argparse.ArgumentParser(description='Visualize the word confidences of OCR results (ALTO-XML)')
+parser.add_argument('--mets', metavar='URL', help='URL of METS file (not required for SUB Hamburg)')
+parser.add_argument('--verbose', action=argparse.BooleanOptionalAction, metavar='URL', help='URL of METS file', required=False)
+parser.add_argument('ppn', metavar='PPN', help='PPN of digitized item')
+args = parser.parse_args()
+
+if args.verbose:
+    print(f'{args.mets=}')
+    print(f'{args.ppn=}')
+    print(f'{args.verbose=}')
+    print(f'{matplotlib.get_backend()=}')
+
 # Don't use an interactive (and really slow) matplotlib backend.
 matplotlib.use('agg')
+
+if args.mets:
+    mets_url = args.mets
+else:
+    # derive METS URL from PPN for SUB Hamburg
+    mets_url = "https://mets.sub.uni-hamburg.de/kitodo/" + args.ppn
+
+record_id = args.ppn
 
 # ## Function definitions
 
@@ -74,7 +95,7 @@ matplotlib.use('agg')
 # with small adjustments from myself
 def download_file(filename, url):
     """
-    Download an URL to a file
+    Download a URL to a file
     """
     with open(filename, 'wb') as fout:
         response = requests.get(url, stream=True)
@@ -89,7 +110,10 @@ def download_if_not_exists(filename, url):
     Download a URL to a file if the file
     does not exist already.
     """
-    if not os.path.exists(filename):
+    if os.path.exists(filename):
+        # give feedback if we are using a local copy
+        print("Using local copy: " + filename)
+    else:
         # create subfolders if necessary
         dirname = os.path.dirname(filename)
         if not os.path.exists(dirname):
@@ -98,9 +122,6 @@ def download_if_not_exists(filename, url):
         print("Retrieving: " + url, end="")
         download_file(filename, url)
         print(" -> Done!", end="\n")
-        return
-    # give feedback if we are using a local copy
-    print("Using local copy: " + filename)
 
 
 # ## Step 1 - File download
@@ -116,7 +137,6 @@ def download_if_not_exists(filename, url):
 mets_dir = record_id + "/mets/"
 
 # download the METS/MODS
-mets_url = "https://mets.sub.uni-hamburg.de/kitodo/" + str(record_id)
 mets_filename = mets_dir + record_id + ".xml"
 download_if_not_exists(mets_filename, mets_url)
 
@@ -138,6 +158,9 @@ with open(mets_filename, 'r', encoding='utf-8') as file:
 # cook a soup
 mets_soup = BeautifulSoup(mets, "lxml-xml")
 
+# get PURL
+purl = mets_soup.find('mods:identifier', {'type': 'purl'}).get_text()
+
 # get all file location elements
 filegrp_fulltext = mets_soup.find('mets:fileGrp', {"USE": "FULLTEXT"}).find_all('mets:FLocat')
 
@@ -146,6 +169,16 @@ fulltext_path = []
 for item in filegrp_fulltext:
     fulltext_path.append(item['xlink:href'])
 
+# get all image location elements
+# get all image URLs from the xlink:href attribute
+image_url = []
+for use in ['MAX', 'DEFAULT']:
+    filegrp = mets_soup.find('mets:fileGrp', {"USE": use})
+    if filegrp:
+        filegrp_images = filegrp.find_all('mets:FLocat')
+        for item in filegrp_images:
+            image_url.append(item['xlink:href'])
+        break
 
 # ### ... download the ALTO files
 
@@ -484,13 +517,13 @@ mods_year = mets_soup.find('mods:dateIssued').string if mets_soup.find('mods:dat
 report_filename = record_id + "/" + record_id + "_report.html"
 
 # header and opening the HTML body
-report_start = '<!doctype html><html lang="en"><head><meta charset="utf-8">                <meta name="viewport" content="width=device-width, initial-scale=1">                <title>OCA.py Report - ' + record_id + '</title>                <link href="../ocapy/bootstrap.min.css" rel="stylesheet"></head>                <body><script src="../ocapy/bootstrap.bundle.min.js"></script>'
+report_start = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>OCA.py Report - ' + record_id + '</title><link href="../ocapy/bootstrap.min.css" rel="stylesheet"></head><body><script src="../ocapy/bootstrap.bundle.min.js"></script>'
 
 # closing the HTML body
 report_end = '</body></html>'
 
 # the overview shows the contents of the general statistic and some descriptive metadata
-report_overview = '<div class="container"><h1><a href="https://resolver.sub.uni-hamburg.de/kitodo/' + record_id + '" class="link-dark">Result for ' + record_id + '</a></h1></div><div class="container"><div class="row gx-2 m-1"><div class="col-lg-12 col-md-12 h-100"><div class="card mb-3">  <div class="row g-0">    <div class="col-md-4">      <a href="https://mets.sub.uni-hamburg.de/kitodo/' + record_id + '"><img src="images/' + record_id + '.png" class="img-fluid rounded-start" alt="..."></a>    </div>    <div class="col-md-8">      <div class="card-body">        <h5 class="card-title">' + mods_author + ' (' + mods_year + '): <em>' + mods_title + '</em></h5><br>        <h6 class="card-subtitle mb-2 text-muted">Page Stats</h6>    <p class="font-monospace">    Total Pages: ' + str(int(pages_df_list_report_df.shape[0])) + '<br>    Total Words: ' + str(int(pages_df_list_report_df['count'].sum())) + '<br>    Total Lines: ' + str(int(pages_df_list_report_df['textlines'].sum())) + '<br>    </p>    <h6 class="card-subtitle mb-2 text-muted">Word Confidence</h6>    <p class="font-monospace">    &#8709;&nbsp;mean:&nbsp;' + str(pages_df_list_report_df['mean'].mean())[0:4] + '<br>\
+report_overview = '<div class="container"><h1><a href="' + purl + '" class="link-dark">Result for ' + record_id + '</a></h1></div><div class="container"><div class="row gx-2 m-1"><div class="col-lg-12 col-md-12 h-100"><div class="card mb-3"><div class="row g-0"><div class="col-md-4"><a href="' + mets_url + '"><img src="images/' + record_id + '.png" class="img-fluid rounded-start" alt="..."></a></div><div class="col-md-8"><div class="card-body"><h5 class="card-title">' + mods_author + ' (' + mods_year + '): <em>' + mods_title + '</em></h5><br><h6 class="card-subtitle mb-2 text-muted">Page Stats</h6><p class="font-monospace">    Total Pages: ' + str(int(pages_df_list_report_df.shape[0])) + '<br>    Total Words: ' + str(int(pages_df_list_report_df['count'].sum())) + '<br>    Total Lines: ' + str(int(pages_df_list_report_df['textlines'].sum())) + '<br></p><h6 class="card-subtitle mb-2 text-muted">Word Confidence</h6><p class="font-monospace">    &#8709;&nbsp;mean:&nbsp;' + str(pages_df_list_report_df['mean'].mean())[0:4] + '<br>\
     &#8709;&nbsp;std:&nbsp;&nbsp;' + str(pages_df_list_report_df['std'].mean())[0:4] + '<br>\
     <br>\
     &#8709;&nbsp;25%:&nbsp;&nbsp;' + str(pages_df_list_report_df['25%'].mean())[0:4] + '<br>\
@@ -523,7 +556,7 @@ for counter in range(len(fulltext_path)):
 
     # add card to row
     # each card is a detailed statistic for each page with the heatmap of each page
-    report_details += '    <div class="col-lg-2 col-md-12 h-100">    <div class="card border-dark">    <a href="alto/' + str(counter + 1).zfill(8) + '.xml"><img src="images/' + str(counter) + '.png" class="card-img-top" alt="Page ' + str(counter + 1) + '"></a>    <div class="card-body">    <h5 class="card-title"><a href="https://pic.sub.uni-hamburg.de/kitodo/' + record_id + '/' + str(counter + 1).zfill(8) + '.tif" class="link-dark">Page ' + str(counter + 1) + '</a></h5>    <h6 class="card-subtitle mb-2 text-muted">Page Stats</h6>    <p class="font-monospace">    Words: ' + str(int(pages_df_list_report_df['count'].iloc[counter])) + '<br>    Lines: ' + str(len(pages_df_list[counter])) + '<br>    </p>    <h6 class="card-subtitle mb-2 text-muted">Word Confidence</h6>    <p class="font-monospace">    mean:&nbsp;' + str(pages_df_list_report_df['mean'].iloc[counter])[0:4] + '<br>    std:&nbsp;&nbsp;' + str(pages_df_list_report_df['std'].iloc[counter])[0:4] + '<br>    <br>    <!--min:&nbsp;&nbsp;' + str(pages_df_list_report_df['min'].iloc[counter])[0:4] + '<br>-->    25%:&nbsp;&nbsp;' + str(pages_df_list_report_df['25%'].iloc[counter])[0:4] + '<br>    50%:&nbsp;&nbsp;' + str(pages_df_list_report_df['50%'].iloc[counter])[0:4] + '<br>    75%:&nbsp;&nbsp;' + str(pages_df_list_report_df['75%'].iloc[counter])[0:4] + '<br>    <!--max:&nbsp;&nbsp;' + str(pages_df_list_report_df['max'].iloc[counter])[0:4] + '-->    </p>    </div>    </div>    </div>'
+    report_details += '<div class="col-lg-2 col-md-12 h-100"><div class="card border-dark"><a href="alto/' + str(counter + 1).zfill(8) + '.xml"><img src="images/' + str(counter) + '.png" class="card-img-top" alt="Page ' + str(counter + 1) + '"></a><div class="card-body"><h5 class="card-title"><a href="' + image_url[counter] + '" class="link-dark">Page ' + str(counter + 1) + '</a></h5><h6 class="card-subtitle mb-2 text-muted">Page Stats</h6><p class="font-monospace">    Words: ' + str(int(pages_df_list_report_df['count'].iloc[counter])) + '<br>    Lines: ' + str(len(pages_df_list[counter])) + '<br></p><h6 class="card-subtitle mb-2 text-muted">Word Confidence</h6><p class="font-monospace">    mean:&nbsp;' + str(pages_df_list_report_df['mean'].iloc[counter])[0:4] + '<br>    std:&nbsp;&nbsp;' + str(pages_df_list_report_df['std'].iloc[counter])[0:4] + '<br><br><!--min:&nbsp;&nbsp;' + str(pages_df_list_report_df['min'].iloc[counter])[0:4] + '<br>-->    25%:&nbsp;&nbsp;' + str(pages_df_list_report_df['25%'].iloc[counter])[0:4] + '<br>    50%:&nbsp;&nbsp;' + str(pages_df_list_report_df['50%'].iloc[counter])[0:4] + '<br>    75%:&nbsp;&nbsp;' + str(pages_df_list_report_df['75%'].iloc[counter])[0:4] + '<br><!--max:&nbsp;&nbsp;' + str(pages_df_list_report_df['max'].iloc[counter])[0:4] + '--></p></div></div></div>'
 
 # close container if end of document
 report_details += '</div>'
