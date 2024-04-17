@@ -158,8 +158,15 @@ with open(mets_filename, 'r', encoding='utf-8') as file:
 # cook a soup
 mets_soup = BeautifulSoup(mets, "lxml-xml")
 
-# get PURL
-purl = mets_soup.find('mods:identifier', {'type': 'purl'}).get_text()
+# get PURL or URN from METS file
+purl = mets_soup.find('mods:identifier', {'type': 'purl'})
+if purl:
+    # found PURL
+    purl = purl.get_text()
+else:
+    # no PURL in METS file, so get URN and calculate a PURL from it
+    urn = mets_soup.find('mods:identifier', {'type': 'urn'}).get_text()
+    purl = 'https://nbn-resolving.org/' + urn
 
 # get all file location elements
 filegrp_fulltext = mets_soup.find('mets:fileGrp', {"USE": "FULLTEXT"}).find_all('mets:FLocat')
