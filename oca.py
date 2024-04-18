@@ -573,7 +573,7 @@ report_details += '</div>'
 report = report_start + report_overview + report_details + report_end
 
 # cook a soup (we need an XML object from the string provided)
-report_soup = BeautifulSoup(report)
+report_soup = BeautifulSoup(report, features="lxml")
 # prettify the HTML, so it won't look nasty
 report_pretty = str(report_soup.prettify()).encode(encoding='UTF-8')
 
