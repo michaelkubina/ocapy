@@ -387,6 +387,7 @@ ax.add_collection(col)
 ax.set_ylim(0, 1)
 ax.set_xlim(0, last_item + 1)
 fig.savefig(images_dir + record_id + '.png')
+plt.close()
 
 
 # ### ...now we need a function to concatenate multiple stripes into one single image
