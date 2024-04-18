@@ -46,6 +46,8 @@
 
 import argparse
 import os
+import queue
+import threading
 # we need a library, which allows copying files, once the temporary
 # warming stripes for each textline are concatenated and final
 from shutil import copyfile
@@ -64,6 +66,7 @@ from PIL import Image
 
 parser = argparse.ArgumentParser(description='Visualize the word confidences of OCR results (ALTO-XML)')
 parser.add_argument('--mets', metavar='URL', help='URL of METS file (not required for SUB Hamburg)')
+parser.add_argument('--threads', type=int, help='number of threads to process pages faster')
 parser.add_argument('--verbose', action=argparse.BooleanOptionalAction, metavar='URL', help='URL of METS file', required=False)
 parser.add_argument('ppn', metavar='PPN', help='PPN of digitized item')
 args = parser.parse_args()
@@ -71,6 +74,7 @@ args = parser.parse_args()
 if args.verbose:
     print(f'{args.mets=}')
     print(f'{args.ppn=}')
+    print(f'{args.threads=}')
     print(f'{args.verbose=}')
     print(f'{matplotlib.get_backend()=}')
 
@@ -410,12 +414,15 @@ def get_concat_v(im1, im2):
 # In[ ]:
 
 
-# now lets create the "heatmap" for each page in our list of DataFrames
-for page_index, page in enumerate(pages_df_list):
+# now let us create the "heatmap" for each page in our list of DataFrames
+def process_page(page_index, page):
     # of course with each textline as separate warming stripes
-    for textline_index in range(0, (page.shape[0])):
+    if not args.verbose:
+        print(f'Page {page_index} ({page.shape[0]} lines)')
+    for textline_index in range(0, page.shape[0]):
         # print progress
-        print("Page " + str(page_index) + " Line " + str(textline_index))
+        if args.verbose:
+            print("Page " + str(page_index) + " Line " + str(textline_index))
 
         # the next lines are basically the same as for the general statistic, thus no commentary
         # it would've been better to put this whole process into a separate function (DRY = don't repeat yourself)
@@ -444,9 +451,10 @@ for page_index, page in enumerate(pages_df_list):
             fig.savefig(temp_dir + str(page_index) + '.png')
         # now with every additional textline concatenate the images (the new image with the last concatenated image or the very first image respectively) )
         if textline_index > 0:
-            fig.savefig(temp_dir + 'concat.png')
+            concat_png = f'{temp_dir}{page_index}concat.png'
+            fig.savefig(concat_png)
             base = Image.open(temp_dir + str(page_index) + '.png')
-            add = Image.open(temp_dir + 'concat.png')
+            add = Image.open(concat_png)
             get_concat_v(base, add).save(temp_dir + str(page_index) + '.png', 'PNG')
         # close the plot to free memory
         plt.close()
@@ -465,6 +473,47 @@ for page_index, page in enumerate(pages_df_list):
         # rename actually moves the file from temp to images
         os.rename(temp_dir + str(page_index) + '.png', images_dir + str(page_index) + '.png')
 
+
+def thread_function():
+    while True:
+        try:
+            # Get an item from the queue
+            page_index, page = page_queue.get_nowait()
+        except queue.Empty:
+            # If the queue is empty, break out of the loop
+            break
+        else:
+            # Process the item
+            process_page(page_index, page)
+
+
+threads = []
+# the number of threads should be larger than 0 and not exceed
+# the number of available cpus and the number of pages
+num_threads = args.threads
+if num_threads < 1:
+    num_threads = 1
+if num_threads > os.cpu_count():
+    num_threads = os.cpu_count()
+if num_threads > len(image_url):
+    num_threads = len(image_url)
+
+matplotlib.rcParams['figure.max_open_warning'] = num_threads
+
+page_queue = queue.Queue()
+for page_index, page in enumerate(pages_df_list):
+    page_queue.put([page_index, page])
+
+for _ in range(num_threads - 1):
+    thread = threading.Thread(target=thread_function)
+    thread.start()
+    threads.append(thread)
+
+thread_function()
+
+# Wait for all threads to finish
+for thread in threads:
+    thread.join()
 
 # ### ...now resize all images to an equal width and height
 # There will be pages with few and with very much textlines. For a cleaner look, we will resize all output images to a DIN A7 format at screen resolution, with exception of the general statistic, which will be in DIN A5.
