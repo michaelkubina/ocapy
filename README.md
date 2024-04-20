@@ -43,3 +43,13 @@ METS files from other libraries can be processed by passing the METS URL in addi
 ```
 oca.py --mets https://digi.bib.uni-mannheim.de/fileadmin/digi/1885328680/1885328680.xml PPN1885328680
 ```
+
+Processing of many pages can be slow, especially if those pages also contain lots of lines and word.
+On modern hardware it is possible to process several pages at the same time:
+```
+# Use 4 threads for parallel processing of up to 4 pages.
+oca.py --thread 4 [...]
+```
+The number of threads won't exceed the number of total pages and
+is also automatically limited to the available CPU cores.
+Therefore `--threads 999` will use 100% of the available computing power.
